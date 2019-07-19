@@ -1,0 +1,1932 @@
+Starting job on  Wed Jul 17 15:44:44 UTC 2019
+Running on  Linux wp-09-04.lnl.infn.it 2.6.32-754.6.3.el6.x86_64 #1 SMP Tue Oct 9 11:31:50 CDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+System release  CentOS release 6.10 (Final)
+name: aTGCstudy_cpodd_ww_wvmass600to800
+carddir: cards/production/pre2017/13TeV/WVTolnujj_cpodd/aTGCstudy_cpodd_ww_wvmass600to800
+queue: condor
+scram_arch: slc6_amd64_gcc630
+cmssw_version: CMSSW_9_3_8
+patching file models/loop_qcd_qed_sm/restrict_lepton_masses_no_lepton_yukawas.dat
+patching file models/loop_sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_ckm_lepton_masses.dat
+patching file models/sm/restrict_ckm_lepton_masses_no_b_mass.dat
+patching file models/sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_lepton_masses_no_b_mass.dat
+patching file Template/NLO/SubProcesses/MCmasses_PYTHIA8.inc
+patching file Template/LO/bin/internal/Gridpack/run.sh
+patching file madgraph/interface/loop_interface.py
+Hunk #1 succeeded at 500 (offset 2 lines).
+patching file madgraph/various/systematics.py
+Hunk #1 succeeded at 314 (offset 86 lines).
+Hunk #2 succeeded at 348 (offset 87 lines).
+Hunk #3 succeeded at 512 (offset 96 lines).
+patching file Template/LO/Source/.make_opts
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/export_v4.py
+Hunk #1 succeeded at 502 (offset 4 lines).
+patching file madgraph/iolibs/template_files/pdf_opendata.f
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file Template/LO/Source/.make_opts
+patching file Template/LO/Source/PDF/pdf_lhapdf6.cc
+patching file Template/NLO/Source/PDF/pdf_lhapdf6.cc
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file madgraph/iolibs/export_v4.py
+Hunk #1 succeeded at 1742 (offset 3 lines).
+patching file MadSpin/interface_madspin.py
+patching file MadSpin/interface_madspin.py
+patching file madgraph/interface/reweight_interface.py
+patching file madgraph/interface/common_run_interface.py
+patching file madgraph/interface/madgraph_interface.py
+Hunk #1 succeeded at 5743 (offset -97 lines).
+patching file madgraph/various/systematics.py
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file Template/loop_material/StandAlone/SubProcesses/makefile
+patching file madgraph/interface/reweight_interface.py
+Hunk #1 succeeded at 458 with fuzz 1 (offset -9 lines).
+patching file madgraph/various/misc.py
+local path is not an afs path, batch jobs will use worker node scratch space instead of afs
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.0                 2017-08-16         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/mgconfigscript
+The import format was not given, so we guess it as command
+set auto_update 0
+save options auto_update
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set output_dependencies internal
+save options output_dependencies
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set lhapdf /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda/share/LHAPDF/../../bin/lhapdf-config
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda/share/LHAPDF/../../bin/lhapdf-config
+save options lhapdf
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set run_mode  1
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set cluster_type cms_condor
+save options cluster_type
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_queue None
+save options cluster_queue
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_status_update 300 120
+save options cluster_status_update
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_nb_retry 10
+save options cluster_nb_retry
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_retry_wait 300
+save options cluster_retry_wait
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set cluster_retry_wait 30
+save options cluster_retry_wait
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+quit
+ 
+
+ 
+
+Loading extra models specified in /srv/cards/production/pre2017/13TeV/WVTolnujj_cpodd/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_extramodels.dat
+Loading extra model EWdim6NLO.tar.gz
+EWdim6NLO/
+EWdim6NLO/couplings.pyo
+EWdim6NLO/decays.py
+EWdim6NLO/restrict_no_cmass_cpodd.dat
+EWdim6NLO/__init__.pyc
+EWdim6NLO/function_library.py
+EWdim6NLO/vertices.py
+EWdim6NLO/CT_couplings.py
+EWdim6NLO/CT_couplings.pyc
+EWdim6NLO/vertices.pyo
+EWdim6NLO/object_library.py
+EWdim6NLO/lorentz.pyo
+EWdim6NLO/parameters.pyo
+EWdim6NLO/CT_vertices.pyc
+EWdim6NLO/propagators.py
+EWdim6NLO/parameters.py
+EWdim6NLO/EWdim6NLO.log
+EWdim6NLO/object_library.pyc
+EWdim6NLO/restrict_no_cbmass_cwwwcbcw.dat
+EWdim6NLO/write_param_card.pyc
+EWdim6NLO/CT_vertices.pyo
+EWdim6NLO/restrict_no_cmass.dat
+EWdim6NLO/lorentz.pyc
+EWdim6NLO/restrict_no_cmass_cwwwcbcw.dat
+EWdim6NLO/coupling_orders.py
+EWdim6NLO/restrict_no_cmass_cwwonly.dat
+EWdim6NLO/propagators.pyc
+EWdim6NLO/__init__.pyo
+EWdim6NLO/restrict_no_cmass_cwonly.dat
+EWdim6NLO/parameters.pyc
+EWdim6NLO/lorentz.py
+EWdim6NLO/object_library.pyo
+EWdim6NLO/vertices.pyc
+EWdim6NLO/write_param_card.py
+EWdim6NLO/model.pkl
+EWdim6NLO/restrict_no_cmass_SM.dat
+EWdim6NLO/function_library.pyo
+EWdim6NLO/particles.pyc
+EWdim6NLO/restrict_no_cbmass_cpodd.dat
+EWdim6NLO/restrict_no_cmass_cbonly.dat
+EWdim6NLO/CT_couplings.pyo
+EWdim6NLO/coupling_orders.pyo
+EWdim6NLO/restrict_no_cmass_cwwwcbcw_wz_short.dat
+EWdim6NLO/coupling_orders.pyc
+EWdim6NLO/decays.pyc
+EWdim6NLO/write_param_card.pyo
+EWdim6NLO/couplings.py
+EWdim6NLO/particles.py
+EWdim6NLO/particles.pyo
+EWdim6NLO/__init__.py
+EWdim6NLO/propagators.pyo
+EWdim6NLO/CT_vertices.py
+EWdim6NLO/restrict_no_cmass_cwcbcwwwOnly.dat
+EWdim6NLO/decays.pyo
+EWdim6NLO/couplings.pyc
+EWdim6NLO/function_library.pyc
+EWdim6NLO/dec_model.pkl
+/srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.0                 2017-08-16         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from MG5_aMC_v2_6_0/input/mg5_configuration.txt 
+None does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda/share/LHAPDF/../../bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/aTGCstudy_cpodd_ww_wvmass600to800_proc_card.dat
+The import format was not given, so we guess it as command
+import model EWdim6NLO
+INFO: reload from .py file 
+INFO: load particles 
+INFO: load vertices 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u d s u~ d~ s~ c c~
+Defined multiparticle j = g u d s u~ d~ s~ c c~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g ghg ghg~ u d s u~ d~ s~ a gha gha~ ve vm vt e- mu- ta- ve~ vm~ vt~ e+ mu+ ta+ c t b c~ t~ b~ z w+ ghz ghwp ghwm h w- ghz~ ghwp~ ghwm~
+define j = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u d s u~ d~ s~ c c~
+define p = g u c d s u~ c~ d~ s~
+Defined multiparticle p = g u d s u~ d~ s~ c c~
+define ell+ = e+ mu+ ta+
+Defined multiparticle ell+ = e+ mu+ ta+
+define ell- = e- mu- ta-
+Defined multiparticle ell- = e- mu- ta-
+define V = w+ w-
+Defined multiparticle v = w+ w-
+define vl = ve vm vt
+Defined multiparticle vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+Defined multiparticle vl~ = ve~ vm~ vt~
+generate p p > ell+ vl w- $$ t t~ H QED=3 [QCD] @0
+[1;34mInterpreting 'QED=3' as 'QED<=3'[0m
+[1;34mWARNING: Process: g/u/d/s/u~/d~/s~/c/c~ g/u/d/s/u~/d~/s~/c/c~ > e+/mu+/ta+ ve/vm/vt w- $$ t t~ h NP=2 QED=3 [ all = QCD ] can have real emission processes which are not finite.
+To avoid this, please use multiparticles when generating the process and be sure to include all the following particles in the multiparticle definition:
+ g, s, u, d, d~, u~, s~ [0m
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (1 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (2 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (3 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (4 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (5 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (6 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (7 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (8 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (9 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (10 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (11 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (12 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (13 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (14 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (15 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (16 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (17 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (18 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (19 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (20 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (21 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (22 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (23 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (24 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (1 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (2 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (3 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (4 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (5 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (6 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (7 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (8 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (9 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (10 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (11 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (12 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (13 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (14 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (15 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (16 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (17 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (18 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (19 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (20 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (21 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (22 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (23 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (24 / 24) 
+INFO: Generated 24 subprocesses with 1224 real emission diagrams, 192 born diagrams and 264 virtual diagrams 
+add process p p > ell+ vl w- j $$ t t~ H QED=3 [QCD] @1
+[1;34mInterpreting 'QED=3' as 'QED<=3'[0m
+[1;34mWARNING: Process: g/u/d/s/u~/d~/s~/c/c~ g/u/d/s/u~/d~/s~/c/c~ > e+/mu+/ta+ ve/vm/vt w- g/u/d/s/u~/d~/s~/c/c~ $$ t t~ h NP=2 QED=3 [ all = QCD ] @1 can have real emission processes which are not finite.
+To avoid this, please use multiparticles when generating the process and be sure to include all the following particles in the multiparticle definition:
+ g, s, u, d, d~, u~, s~ [0m
+INFO: Generating FKS-subtracted matrix elements for born process: g u > e+ ve w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (1 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u > mu+ vm w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (2 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u > ta+ vt w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (3 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > e+ ve w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (4 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > mu+ vm w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (5 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > ta+ vt w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (6 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > e+ ve w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (7 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > mu+ vm w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (8 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > ta+ vt w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (9 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > e+ ve w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (10 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > mu+ vm w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (11 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > ta+ vt w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (12 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > e+ ve w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (13 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > mu+ vm w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (14 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > ta+ vt w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (15 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > e+ ve w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (16 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > mu+ vm w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (17 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > ta+ vt w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (18 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > e+ ve w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (19 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > mu+ vm w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (20 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > ta+ vt w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (21 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > e+ ve w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (22 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > mu+ vm w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (23 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > ta+ vt w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (24 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > e+ ve w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (25 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > mu+ vm w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (26 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > ta+ vt w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (27 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (28 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (29 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (30 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > e+ ve w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (31 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > mu+ vm w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (32 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > ta+ vt w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (33 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (34 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (35 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (36 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > e+ ve w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (37 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > mu+ vm w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (38 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > ta+ vt w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (39 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (40 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (41 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (42 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > e+ ve w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (43 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > mu+ vm w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (44 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > ta+ vt w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (45 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (46 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (47 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (48 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > e+ ve w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (49 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > mu+ vm w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (50 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > ta+ vt w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (51 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (52 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (53 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (54 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > e+ ve w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (55 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > mu+ vm w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (56 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > ta+ vt w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (57 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (58 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (59 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (60 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > e+ ve w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (61 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > mu+ vm w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (62 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > ta+ vt w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (63 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (64 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (65 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (66 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > e+ ve w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (67 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > mu+ vm w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (68 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > ta+ vt w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (69 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (70 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (71 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (72 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (1 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > mu+ vm w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (2 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (3 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (4 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > mu+ vm w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (5 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (6 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (7 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > mu+ vm w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (8 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (9 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (10 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > mu+ vm w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (11 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (12 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (13 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > mu+ vm w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (14 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (15 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (16 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > mu+ vm w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (17 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (18 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (19 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > mu+ vm w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (20 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (21 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (22 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > mu+ vm w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (23 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (24 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (25 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > mu+ vm w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (26 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (27 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (28 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (29 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (30 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (31 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > mu+ vm w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (32 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (33 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (34 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (35 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (36 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (37 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > mu+ vm w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (38 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (39 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (40 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (41 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (42 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (43 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > mu+ vm w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (44 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (45 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (46 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (47 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (48 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (49 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > mu+ vm w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (50 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (51 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (52 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (53 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (54 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (55 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > mu+ vm w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (56 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (57 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (58 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (59 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (60 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (61 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > mu+ vm w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (62 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (63 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (64 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (65 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (66 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (67 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > mu+ vm w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (68 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (69 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (70 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > mu+ vm w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (71 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 (72 / 72) 
+INFO: Generated 72 subprocesses with 16893 real emission diagrams, 1224 born diagrams and 11880 virtual diagrams 
+add process p p > ell- vl~ w+ $$ t t~ H QED=3 [QCD] @2
+[1;34mInterpreting 'QED=3' as 'QED<=3'[0m
+[1;34mWARNING: Process: g/u/d/s/u~/d~/s~/c/c~ g/u/d/s/u~/d~/s~/c/c~ > e-/mu-/ta- ve~/vm~/vt~ w+ $$ t t~ h NP=2 QED=3 [ all = QCD ] @2 can have real emission processes which are not finite.
+To avoid this, please use multiparticles when generating the process and be sure to include all the following particles in the multiparticle definition:
+ g, s, u, d, d~, u~, s~ [0m
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (1 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (2 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (3 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (4 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (5 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (6 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (7 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (8 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (9 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (10 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (11 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (12 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (13 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (14 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (15 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (16 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (17 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (18 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (19 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (20 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (21 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (22 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (23 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (24 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (1 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (2 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (3 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (4 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (5 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (6 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (7 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (8 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (9 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (10 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (11 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (12 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (13 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (14 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (15 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (16 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (17 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (18 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (19 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (20 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (21 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (22 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (23 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (24 / 24) 
+INFO: Generated 24 subprocesses with 1224 real emission diagrams, 192 born diagrams and 264 virtual diagrams 
+add process p p > ell- vl~ w+ j $$ t t~ H QED=3 [QCD] @3
+[1;34mInterpreting 'QED=3' as 'QED<=3'[0m
+[1;34mWARNING: Process: g/u/d/s/u~/d~/s~/c/c~ g/u/d/s/u~/d~/s~/c/c~ > e-/mu-/ta- ve~/vm~/vt~ w+ g/u/d/s/u~/d~/s~/c/c~ $$ t t~ h NP=2 QED=3 [ all = QCD ] @3 can have real emission processes which are not finite.
+To avoid this, please use multiparticles when generating the process and be sure to include all the following particles in the multiparticle definition:
+ g, s, u, d, d~, u~, s~ [0m
+INFO: Generating FKS-subtracted matrix elements for born process: g u > e- ve~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (1 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u > mu- vm~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (2 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u > ta- vt~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (3 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > e- ve~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (4 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > mu- vm~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (5 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d > ta- vt~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (6 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > e- ve~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (7 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > mu- vm~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (8 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s > ta- vt~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (9 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > e- ve~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (10 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > mu- vm~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (11 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g u~ > ta- vt~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (12 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > e- ve~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (13 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > mu- vm~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (14 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g d~ > ta- vt~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (15 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > e- ve~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (16 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > mu- vm~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (17 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g s~ > ta- vt~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (18 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > e- ve~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (19 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > mu- vm~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (20 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c > ta- vt~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (21 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > e- ve~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (22 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > mu- vm~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (23 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: g c~ > ta- vt~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (24 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > e- ve~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (25 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > mu- vm~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (26 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u g > ta- vt~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (27 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (28 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (29 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u u~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (30 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > e- ve~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (31 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > mu- vm~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (32 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d g > ta- vt~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (33 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (34 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (35 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d d~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (36 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > e- ve~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (37 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > mu- vm~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (38 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s g > ta- vt~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (39 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (40 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (41 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s s~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (42 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > e- ve~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (43 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > mu- vm~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (44 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ g > ta- vt~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (45 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (46 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (47 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ u > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (48 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > e- ve~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (49 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > mu- vm~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (50 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ g > ta- vt~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (51 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (52 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (53 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ d > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (54 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > e- ve~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (55 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > mu- vm~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (56 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ g > ta- vt~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (57 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (58 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (59 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ s > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (60 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > e- ve~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (61 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > mu- vm~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (62 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c g > ta- vt~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (63 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (64 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (65 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c c~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (66 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > e- ve~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (67 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > mu- vm~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (68 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ g > ta- vt~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (69 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (70 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (71 / 72) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ c > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (72 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (1 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > mu- vm~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (2 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (3 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (4 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > mu- vm~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (5 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (6 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (7 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > mu- vm~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (8 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (9 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (10 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > mu- vm~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (11 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g u~ > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (12 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (13 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > mu- vm~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (14 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g d~ > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (15 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (16 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > mu- vm~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (17 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g s~ > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (18 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (19 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > mu- vm~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (20 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (21 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (22 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > mu- vm~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (23 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: g c~ > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (24 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (25 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > mu- vm~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (26 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u g > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (27 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (28 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (29 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u u~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (30 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (31 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > mu- vm~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (32 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d g > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (33 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (34 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (35 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d d~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (36 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (37 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > mu- vm~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (38 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s g > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (39 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (40 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (41 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s s~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (42 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (43 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > mu- vm~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (44 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ g > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (45 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (46 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (47 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ u > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (48 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (49 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > mu- vm~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (50 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ g > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (51 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (52 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (53 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ d > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (54 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (55 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > mu- vm~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (56 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ g > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (57 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (58 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (59 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ s > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (60 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (61 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > mu- vm~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (62 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c g > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (63 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (64 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (65 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c c~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (66 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (67 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > mu- vm~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (68 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ g > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (69 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (70 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > mu- vm~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (71 / 72) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ c > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (72 / 72) 
+INFO: Generated 72 subprocesses with 16893 real emission diagrams, 1224 born diagrams and 11880 virtual diagrams 
+output aTGCstudy_cpodd_ww_wvmass600to800 -nojpeg
+[1;60mFirst output using loop matrix-elements has been detected. Now asking for loop reduction:[0m
+For loop computations, MadLoop requires dedicated tools to perform the reduction of loop Feynman diagrams using OPP-based and/or TIR approaches.
+
+Which one do you want to install? (this needs to be done only once)
+1. [34mcuttools  (OPP) [0711.3596]  [0m : will be installed (required)
+2. [34miregi     (TIR) [1405.0301]  [0m : will be installed (required)
+3. [34mninja     (OPP) [1403.1229]  [0m : [92mwill be installed [0m(recommended)
+4. [34mcollier   (TIR) [1604.06792] [0m : [91mdo not install[0m
+5. [34mgolem     (TIR) [0807.0605]  [0m : [91mdo not install[0m
+You can:
+ -> hit 'enter' to proceed
+ -> type a number to cycle its options
+ -> enter the following command:
+    [34m{tool_name}[0m [[34minstall[0m|[34mnoinstall[0m|[34m{prefixed_installation_path}[0m]
+
+[1m[91mIf you are unsure about what this question means, just type enter to proceed. [0m
+[1;34mfound line : display multiparticles[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+set golem ''
+save options golem
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options golem
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set pjfry ''
+save options pjfry
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options pjfry
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+set collier ''
+save options collier
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save options collier
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+install ninja
+[1;60m   You are installing 'ninja', please cite ref(s): [92marXiv:1203.0291, arXiv:1403.1229, arXiv:1604.01363[0m. [0m
+Downloading the HEPToolInstaller at:
+   http://madgraph.physics.illinois.edu/Downloads/HEPToolsInstaller/HEPToolsInstaller_V119.tar.gz
+Now installing ninja. Be patient...
+[1;32mninja successfully installed in /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/HEPTools.[0m
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+INFO: Writing out the aMC@NLO code, using optimized Loops 
+INFO: initialize a new directory: aTGCstudy_cpodd_ww_wvmass600to800 
+INFO: remove old information in aTGCstudy_cpodd_ww_wvmass600to800 
+INFO: When using the 'output_dependencies=internal'  MG5_aMC option, the (optional) reduction library ninja cannot be employed because it is not distributed with the MG5_aMC code so that it cannot be copied locally. 
+INFO: Generating real emission matrix-elements... 
+INFO: Generating Helas calls for FKS process: u u~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (1 / 192) 
+INFO: Processing color information for process: u u~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: u u~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (2 / 192) 
+INFO: Generating Helas calls for FKS process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (3 / 192) 
+INFO: Reusing existing color information for process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (4 / 192) 
+INFO: Reusing existing color information for process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: d d~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (5 / 192) 
+INFO: Generating Helas calls for FKS process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (6 / 192) 
+INFO: Reusing existing color information for process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (7 / 192) 
+INFO: Reusing existing color information for process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: s s~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (8 / 192) 
+INFO: Generating Helas calls for FKS process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (9 / 192) 
+INFO: Reusing existing color information for process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (10 / 192) 
+INFO: Processing color information for process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: u~ u > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (11 / 192) 
+INFO: Generating Helas calls for FKS process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (12 / 192) 
+INFO: Reusing existing color information for process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (13 / 192) 
+INFO: Reusing existing color information for process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: d~ d > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (14 / 192) 
+INFO: Generating Helas calls for FKS process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (15 / 192) 
+INFO: Reusing existing color information for process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (16 / 192) 
+INFO: Reusing existing color information for process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: s~ s > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (17 / 192) 
+INFO: Generating Helas calls for FKS process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (18 / 192) 
+INFO: Reusing existing color information for process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (19 / 192) 
+INFO: Reusing existing color information for process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: c c~ > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (20 / 192) 
+INFO: Generating Helas calls for FKS process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (21 / 192) 
+INFO: Reusing existing color information for process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (22 / 192) 
+INFO: Reusing existing color information for process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: c~ c > mu+ vm w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (23 / 192) 
+INFO: Generating Helas calls for FKS process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h (24 / 192) 
+INFO: Reusing existing color information for process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating Helas calls for FKS process: g u > e+ ve w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (25 / 192) 
+INFO: Processing color information for process: g u > e+ ve w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g u > mu+ vm w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (26 / 192) 
+INFO: Generating Helas calls for FKS process: g u > ta+ vt w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (27 / 192) 
+INFO: Reusing existing color information for process: g u > ta+ vt w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g d > e+ ve w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (28 / 192) 
+INFO: Processing color information for process: g d > e+ ve w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g d > mu+ vm w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (29 / 192) 
+INFO: Generating Helas calls for FKS process: g d > ta+ vt w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (30 / 192) 
+INFO: Reusing existing color information for process: g d > ta+ vt w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g s > e+ ve w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (31 / 192) 
+INFO: Reusing existing color information for process: g s > e+ ve w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g s > mu+ vm w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (32 / 192) 
+INFO: Generating Helas calls for FKS process: g s > ta+ vt w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (33 / 192) 
+INFO: Reusing existing color information for process: g s > ta+ vt w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g u~ > e+ ve w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (34 / 192) 
+INFO: Processing color information for process: g u~ > e+ ve w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g u~ > mu+ vm w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (35 / 192) 
+INFO: Generating Helas calls for FKS process: g u~ > ta+ vt w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (36 / 192) 
+INFO: Reusing existing color information for process: g u~ > ta+ vt w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g d~ > e+ ve w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (37 / 192) 
+INFO: Processing color information for process: g d~ > e+ ve w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g d~ > mu+ vm w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (38 / 192) 
+INFO: Generating Helas calls for FKS process: g d~ > ta+ vt w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (39 / 192) 
+INFO: Reusing existing color information for process: g d~ > ta+ vt w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g s~ > e+ ve w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (40 / 192) 
+INFO: Reusing existing color information for process: g s~ > e+ ve w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g s~ > mu+ vm w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (41 / 192) 
+INFO: Generating Helas calls for FKS process: g s~ > ta+ vt w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (42 / 192) 
+INFO: Reusing existing color information for process: g s~ > ta+ vt w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g c > e+ ve w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (43 / 192) 
+INFO: Reusing existing color information for process: g c > e+ ve w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g c > mu+ vm w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (44 / 192) 
+INFO: Generating Helas calls for FKS process: g c > ta+ vt w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (45 / 192) 
+INFO: Reusing existing color information for process: g c > ta+ vt w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g c~ > e+ ve w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (46 / 192) 
+INFO: Reusing existing color information for process: g c~ > e+ ve w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: g c~ > mu+ vm w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (47 / 192) 
+INFO: Generating Helas calls for FKS process: g c~ > ta+ vt w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (48 / 192) 
+INFO: Reusing existing color information for process: g c~ > ta+ vt w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u g > e+ ve w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (49 / 192) 
+INFO: Processing color information for process: u g > e+ ve w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u g > mu+ vm w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (50 / 192) 
+INFO: Generating Helas calls for FKS process: u g > ta+ vt w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (51 / 192) 
+INFO: Reusing existing color information for process: u g > ta+ vt w- u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u u~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (52 / 192) 
+INFO: Processing color information for process: u u~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u u~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (53 / 192) 
+INFO: Generating Helas calls for FKS process: u u~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (54 / 192) 
+INFO: Reusing existing color information for process: u u~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d g > e+ ve w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (55 / 192) 
+INFO: Processing color information for process: d g > e+ ve w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d g > mu+ vm w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (56 / 192) 
+INFO: Generating Helas calls for FKS process: d g > ta+ vt w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (57 / 192) 
+INFO: Reusing existing color information for process: d g > ta+ vt w- d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d d~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (58 / 192) 
+INFO: Processing color information for process: d d~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d d~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (59 / 192) 
+INFO: Generating Helas calls for FKS process: d d~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (60 / 192) 
+INFO: Reusing existing color information for process: d d~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s g > e+ ve w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (61 / 192) 
+INFO: Reusing existing color information for process: s g > e+ ve w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s g > mu+ vm w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (62 / 192) 
+INFO: Generating Helas calls for FKS process: s g > ta+ vt w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (63 / 192) 
+INFO: Reusing existing color information for process: s g > ta+ vt w- s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s s~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (64 / 192) 
+INFO: Reusing existing color information for process: s s~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s s~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (65 / 192) 
+INFO: Generating Helas calls for FKS process: s s~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (66 / 192) 
+INFO: Reusing existing color information for process: s s~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u~ g > e+ ve w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (67 / 192) 
+INFO: Processing color information for process: u~ g > e+ ve w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u~ g > mu+ vm w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (68 / 192) 
+INFO: Generating Helas calls for FKS process: u~ g > ta+ vt w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (69 / 192) 
+INFO: Reusing existing color information for process: u~ g > ta+ vt w- u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u~ u > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (70 / 192) 
+INFO: Processing color information for process: u~ u > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u~ u > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (71 / 192) 
+INFO: Generating Helas calls for FKS process: u~ u > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (72 / 192) 
+INFO: Reusing existing color information for process: u~ u > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d~ g > e+ ve w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (73 / 192) 
+INFO: Processing color information for process: d~ g > e+ ve w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d~ g > mu+ vm w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (74 / 192) 
+INFO: Generating Helas calls for FKS process: d~ g > ta+ vt w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (75 / 192) 
+INFO: Reusing existing color information for process: d~ g > ta+ vt w- d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d~ d > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (76 / 192) 
+INFO: Processing color information for process: d~ d > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: d~ d > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (77 / 192) 
+INFO: Generating Helas calls for FKS process: d~ d > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (78 / 192) 
+INFO: Reusing existing color information for process: d~ d > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s~ g > e+ ve w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (79 / 192) 
+INFO: Reusing existing color information for process: s~ g > e+ ve w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s~ g > mu+ vm w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (80 / 192) 
+INFO: Generating Helas calls for FKS process: s~ g > ta+ vt w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (81 / 192) 
+INFO: Reusing existing color information for process: s~ g > ta+ vt w- s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s~ s > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (82 / 192) 
+INFO: Reusing existing color information for process: s~ s > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: s~ s > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (83 / 192) 
+INFO: Generating Helas calls for FKS process: s~ s > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (84 / 192) 
+INFO: Reusing existing color information for process: s~ s > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c g > e+ ve w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (85 / 192) 
+INFO: Reusing existing color information for process: c g > e+ ve w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c g > mu+ vm w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (86 / 192) 
+INFO: Generating Helas calls for FKS process: c g > ta+ vt w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (87 / 192) 
+INFO: Reusing existing color information for process: c g > ta+ vt w- c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c c~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (88 / 192) 
+INFO: Reusing existing color information for process: c c~ > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c c~ > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (89 / 192) 
+INFO: Generating Helas calls for FKS process: c c~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (90 / 192) 
+INFO: Reusing existing color information for process: c c~ > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c~ g > e+ ve w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (91 / 192) 
+INFO: Reusing existing color information for process: c~ g > e+ ve w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c~ g > mu+ vm w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (92 / 192) 
+INFO: Generating Helas calls for FKS process: c~ g > ta+ vt w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (93 / 192) 
+INFO: Reusing existing color information for process: c~ g > ta+ vt w- c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c~ c > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (94 / 192) 
+INFO: Reusing existing color information for process: c~ c > e+ ve w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: c~ c > mu+ vm w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (95 / 192) 
+INFO: Generating Helas calls for FKS process: c~ c > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 (96 / 192) 
+INFO: Reusing existing color information for process: c~ c > ta+ vt w- g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating Helas calls for FKS process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (97 / 192) 
+INFO: Reusing existing color information for process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: u u~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (98 / 192) 
+INFO: Generating Helas calls for FKS process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (99 / 192) 
+INFO: Reusing existing color information for process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (100 / 192) 
+INFO: Reusing existing color information for process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: d d~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (101 / 192) 
+INFO: Generating Helas calls for FKS process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (102 / 192) 
+INFO: Reusing existing color information for process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (103 / 192) 
+INFO: Reusing existing color information for process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: s s~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (104 / 192) 
+INFO: Generating Helas calls for FKS process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (105 / 192) 
+INFO: Reusing existing color information for process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (106 / 192) 
+INFO: Reusing existing color information for process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: u~ u > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (107 / 192) 
+INFO: Generating Helas calls for FKS process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (108 / 192) 
+INFO: Reusing existing color information for process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (109 / 192) 
+INFO: Reusing existing color information for process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: d~ d > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (110 / 192) 
+INFO: Generating Helas calls for FKS process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (111 / 192) 
+INFO: Reusing existing color information for process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (112 / 192) 
+INFO: Reusing existing color information for process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: s~ s > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (113 / 192) 
+INFO: Generating Helas calls for FKS process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (114 / 192) 
+INFO: Reusing existing color information for process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (115 / 192) 
+INFO: Reusing existing color information for process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: c c~ > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (116 / 192) 
+INFO: Generating Helas calls for FKS process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (117 / 192) 
+INFO: Reusing existing color information for process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (118 / 192) 
+INFO: Reusing existing color information for process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: c~ c > mu- vm~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (119 / 192) 
+INFO: Generating Helas calls for FKS process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 (120 / 192) 
+INFO: Reusing existing color information for process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating Helas calls for FKS process: g u > e- ve~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (121 / 192) 
+INFO: Reusing existing color information for process: g u > e- ve~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g u > mu- vm~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (122 / 192) 
+INFO: Generating Helas calls for FKS process: g u > ta- vt~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (123 / 192) 
+INFO: Reusing existing color information for process: g u > ta- vt~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g d > e- ve~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (124 / 192) 
+INFO: Reusing existing color information for process: g d > e- ve~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g d > mu- vm~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (125 / 192) 
+INFO: Generating Helas calls for FKS process: g d > ta- vt~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (126 / 192) 
+INFO: Reusing existing color information for process: g d > ta- vt~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g s > e- ve~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (127 / 192) 
+INFO: Reusing existing color information for process: g s > e- ve~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g s > mu- vm~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (128 / 192) 
+INFO: Generating Helas calls for FKS process: g s > ta- vt~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (129 / 192) 
+INFO: Reusing existing color information for process: g s > ta- vt~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g u~ > e- ve~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (130 / 192) 
+INFO: Reusing existing color information for process: g u~ > e- ve~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g u~ > mu- vm~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (131 / 192) 
+INFO: Generating Helas calls for FKS process: g u~ > ta- vt~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (132 / 192) 
+INFO: Reusing existing color information for process: g u~ > ta- vt~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g d~ > e- ve~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (133 / 192) 
+INFO: Reusing existing color information for process: g d~ > e- ve~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g d~ > mu- vm~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (134 / 192) 
+INFO: Generating Helas calls for FKS process: g d~ > ta- vt~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (135 / 192) 
+INFO: Reusing existing color information for process: g d~ > ta- vt~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g s~ > e- ve~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (136 / 192) 
+INFO: Reusing existing color information for process: g s~ > e- ve~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g s~ > mu- vm~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (137 / 192) 
+INFO: Generating Helas calls for FKS process: g s~ > ta- vt~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (138 / 192) 
+INFO: Reusing existing color information for process: g s~ > ta- vt~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g c > e- ve~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (139 / 192) 
+INFO: Reusing existing color information for process: g c > e- ve~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g c > mu- vm~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (140 / 192) 
+INFO: Generating Helas calls for FKS process: g c > ta- vt~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (141 / 192) 
+INFO: Reusing existing color information for process: g c > ta- vt~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g c~ > e- ve~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (142 / 192) 
+INFO: Reusing existing color information for process: g c~ > e- ve~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: g c~ > mu- vm~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (143 / 192) 
+INFO: Generating Helas calls for FKS process: g c~ > ta- vt~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (144 / 192) 
+INFO: Reusing existing color information for process: g c~ > ta- vt~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u g > e- ve~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (145 / 192) 
+INFO: Reusing existing color information for process: u g > e- ve~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u g > mu- vm~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (146 / 192) 
+INFO: Generating Helas calls for FKS process: u g > ta- vt~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (147 / 192) 
+INFO: Reusing existing color information for process: u g > ta- vt~ w+ u NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u u~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (148 / 192) 
+INFO: Reusing existing color information for process: u u~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u u~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (149 / 192) 
+INFO: Generating Helas calls for FKS process: u u~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (150 / 192) 
+INFO: Reusing existing color information for process: u u~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d g > e- ve~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (151 / 192) 
+INFO: Reusing existing color information for process: d g > e- ve~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d g > mu- vm~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (152 / 192) 
+INFO: Generating Helas calls for FKS process: d g > ta- vt~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (153 / 192) 
+INFO: Reusing existing color information for process: d g > ta- vt~ w+ d NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d d~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (154 / 192) 
+INFO: Reusing existing color information for process: d d~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d d~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (155 / 192) 
+INFO: Generating Helas calls for FKS process: d d~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (156 / 192) 
+INFO: Reusing existing color information for process: d d~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s g > e- ve~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (157 / 192) 
+INFO: Reusing existing color information for process: s g > e- ve~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s g > mu- vm~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (158 / 192) 
+INFO: Generating Helas calls for FKS process: s g > ta- vt~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (159 / 192) 
+INFO: Reusing existing color information for process: s g > ta- vt~ w+ s NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s s~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (160 / 192) 
+INFO: Reusing existing color information for process: s s~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s s~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (161 / 192) 
+INFO: Generating Helas calls for FKS process: s s~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (162 / 192) 
+INFO: Reusing existing color information for process: s s~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u~ g > e- ve~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (163 / 192) 
+INFO: Reusing existing color information for process: u~ g > e- ve~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u~ g > mu- vm~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (164 / 192) 
+INFO: Generating Helas calls for FKS process: u~ g > ta- vt~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (165 / 192) 
+INFO: Reusing existing color information for process: u~ g > ta- vt~ w+ u~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u~ u > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (166 / 192) 
+INFO: Reusing existing color information for process: u~ u > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: u~ u > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (167 / 192) 
+INFO: Generating Helas calls for FKS process: u~ u > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (168 / 192) 
+INFO: Reusing existing color information for process: u~ u > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d~ g > e- ve~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (169 / 192) 
+INFO: Reusing existing color information for process: d~ g > e- ve~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d~ g > mu- vm~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (170 / 192) 
+INFO: Generating Helas calls for FKS process: d~ g > ta- vt~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (171 / 192) 
+INFO: Reusing existing color information for process: d~ g > ta- vt~ w+ d~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d~ d > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (172 / 192) 
+INFO: Reusing existing color information for process: d~ d > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: d~ d > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (173 / 192) 
+INFO: Generating Helas calls for FKS process: d~ d > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (174 / 192) 
+INFO: Reusing existing color information for process: d~ d > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s~ g > e- ve~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (175 / 192) 
+INFO: Reusing existing color information for process: s~ g > e- ve~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s~ g > mu- vm~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (176 / 192) 
+INFO: Generating Helas calls for FKS process: s~ g > ta- vt~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (177 / 192) 
+INFO: Reusing existing color information for process: s~ g > ta- vt~ w+ s~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s~ s > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (178 / 192) 
+INFO: Reusing existing color information for process: s~ s > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: s~ s > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (179 / 192) 
+INFO: Generating Helas calls for FKS process: s~ s > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (180 / 192) 
+INFO: Reusing existing color information for process: s~ s > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c g > e- ve~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (181 / 192) 
+INFO: Reusing existing color information for process: c g > e- ve~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c g > mu- vm~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (182 / 192) 
+INFO: Generating Helas calls for FKS process: c g > ta- vt~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (183 / 192) 
+INFO: Reusing existing color information for process: c g > ta- vt~ w+ c NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c c~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (184 / 192) 
+INFO: Reusing existing color information for process: c c~ > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c c~ > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (185 / 192) 
+INFO: Generating Helas calls for FKS process: c c~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (186 / 192) 
+INFO: Reusing existing color information for process: c c~ > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c~ g > e- ve~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (187 / 192) 
+INFO: Reusing existing color information for process: c~ g > e- ve~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c~ g > mu- vm~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (188 / 192) 
+INFO: Generating Helas calls for FKS process: c~ g > ta- vt~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (189 / 192) 
+INFO: Reusing existing color information for process: c~ g > ta- vt~ w+ c~ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c~ c > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (190 / 192) 
+INFO: Reusing existing color information for process: c~ c > e- ve~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating Helas calls for FKS process: c~ c > mu- vm~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (191 / 192) 
+INFO: Generating Helas calls for FKS process: c~ c > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 (192 / 192) 
+INFO: Reusing existing color information for process: c~ c > ta- vt~ w+ g NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: ... Done 
+INFO: Writing files in P0_uux_epvewm (1 / 128) 
+INFO: Creating files in directory V0_uux_epvewm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: u u~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_uux_tapvtwm (2 / 128) 
+INFO: Creating files in directory V0_uux_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_ddx_epvewm (3 / 128) 
+INFO: Creating files in directory V0_ddx_epvewm 
+ALOHA: aloha creates FFV3 set of routines with options: L2
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_ddx_tapvtwm (4 / 128) 
+INFO: Creating files in directory V0_ddx_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_ssx_epvewm (5 / 128) 
+INFO: Creating files in directory V0_ssx_epvewm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_ssx_tapvtwm (6 / 128) 
+INFO: Creating files in directory V0_ssx_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_uxu_epvewm (7 / 128) 
+INFO: Creating files in directory V0_uxu_epvewm 
+ALOHA: aloha creates FFV1 set of routines with options: L1
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_uxu_tapvtwm (8 / 128) 
+INFO: Creating files in directory V0_uxu_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_dxd_epvewm (9 / 128) 
+INFO: Creating files in directory V0_dxd_epvewm 
+ALOHA: aloha creates FFV3 set of routines with options: L1
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_dxd_tapvtwm (10 / 128) 
+INFO: Creating files in directory V0_dxd_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_sxs_epvewm (11 / 128) 
+INFO: Creating files in directory V0_sxs_epvewm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_sxs_tapvtwm (12 / 128) 
+INFO: Creating files in directory V0_sxs_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_ccx_epvewm (13 / 128) 
+INFO: Creating files in directory V0_ccx_epvewm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_ccx_tapvtwm (14 / 128) 
+INFO: Creating files in directory V0_ccx_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_cxc_epvewm (15 / 128) 
+INFO: Creating files in directory V0_cxc_epvewm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P0_cxc_tapvtwm (16 / 128) 
+INFO: Creating files in directory V0_cxc_tapvtwm 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Generating born Feynman diagrams for Process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
+INFO: Writing files in P1_gu_epvewmu (17 / 128) 
+INFO: Creating files in directory V1_gu_epvewmu 
+ALOHA: aloha creates VVV8 set of routines with options: L2,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g u > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gu_tapvtwmu (18 / 128) 
+INFO: Creating files in directory V1_gu_tapvtwmu 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g u > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gd_epvewmd (19 / 128) 
+INFO: Creating files in directory V1_gd_epvewmd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g d > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gd_tapvtwmd (20 / 128) 
+INFO: Creating files in directory V1_gd_tapvtwmd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g d > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gs_epvewms (21 / 128) 
+INFO: Creating files in directory V1_gs_epvewms 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g s > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gs_tapvtwms (22 / 128) 
+INFO: Creating files in directory V1_gs_tapvtwms 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g s > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gux_epvewmux (23 / 128) 
+INFO: Creating files in directory V1_gux_epvewmux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u~ > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g u~ > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gux_tapvtwmux (24 / 128) 
+INFO: Creating files in directory V1_gux_tapvtwmux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u~ > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g u~ > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gdx_epvewmdx (25 / 128) 
+INFO: Creating files in directory V1_gdx_epvewmdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d~ > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g d~ > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gdx_tapvtwmdx (26 / 128) 
+INFO: Creating files in directory V1_gdx_tapvtwmdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d~ > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g d~ > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gsx_epvewmsx (27 / 128) 
+INFO: Creating files in directory V1_gsx_epvewmsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s~ > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g s~ > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gsx_tapvtwmsx (28 / 128) 
+INFO: Creating files in directory V1_gsx_tapvtwmsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s~ > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g s~ > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gc_epvewmc (29 / 128) 
+INFO: Creating files in directory V1_gc_epvewmc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g c > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gc_tapvtwmc (30 / 128) 
+INFO: Creating files in directory V1_gc_tapvtwmc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g c > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gcx_epvewmcx (31 / 128) 
+INFO: Creating files in directory V1_gcx_epvewmcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c~ > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g c~ > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_gcx_tapvtwmcx (32 / 128) 
+INFO: Creating files in directory V1_gcx_tapvtwmcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c~ > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: g c~ > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ug_epvewmu (33 / 128) 
+INFO: Creating files in directory V1_ug_epvewmu 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u g > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u g > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ug_tapvtwmu (34 / 128) 
+INFO: Creating files in directory V1_ug_tapvtwmu 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u g > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u g > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_uux_epvewmg (35 / 128) 
+INFO: Creating files in directory V1_uux_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u u~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_uux_tapvtwmg (36 / 128) 
+INFO: Creating files in directory V1_uux_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u u~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_dg_epvewmd (37 / 128) 
+INFO: Creating files in directory V1_dg_epvewmd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d g > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d g > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_dg_tapvtwmd (38 / 128) 
+INFO: Creating files in directory V1_dg_tapvtwmd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d g > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d g > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ddx_epvewmg (39 / 128) 
+INFO: Creating files in directory V1_ddx_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d d~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ddx_tapvtwmg (40 / 128) 
+INFO: Creating files in directory V1_ddx_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d d~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_sg_epvewms (41 / 128) 
+INFO: Creating files in directory V1_sg_epvewms 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s g > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s g > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_sg_tapvtwms (42 / 128) 
+INFO: Creating files in directory V1_sg_tapvtwms 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s g > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s g > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ssx_epvewmg (43 / 128) 
+INFO: Creating files in directory V1_ssx_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s s~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ssx_tapvtwmg (44 / 128) 
+INFO: Creating files in directory V1_ssx_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s s~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_uxg_epvewmux (45 / 128) 
+INFO: Creating files in directory V1_uxg_epvewmux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ g > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u~ g > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_uxg_tapvtwmux (46 / 128) 
+INFO: Creating files in directory V1_uxg_tapvtwmux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ g > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u~ g > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_uxu_epvewmg (47 / 128) 
+INFO: Creating files in directory V1_uxu_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u~ u > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_uxu_tapvtwmg (48 / 128) 
+INFO: Creating files in directory V1_uxu_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: u~ u > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_dxg_epvewmdx (49 / 128) 
+INFO: Creating files in directory V1_dxg_epvewmdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ g > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d~ g > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_dxg_tapvtwmdx (50 / 128) 
+INFO: Creating files in directory V1_dxg_tapvtwmdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ g > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d~ g > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_dxd_epvewmg (51 / 128) 
+INFO: Creating files in directory V1_dxd_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d~ d > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_dxd_tapvtwmg (52 / 128) 
+INFO: Creating files in directory V1_dxd_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: d~ d > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_sxg_epvewmsx (53 / 128) 
+INFO: Creating files in directory V1_sxg_epvewmsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ g > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s~ g > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_sxg_tapvtwmsx (54 / 128) 
+INFO: Creating files in directory V1_sxg_tapvtwmsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ g > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s~ g > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_sxs_epvewmg (55 / 128) 
+INFO: Creating files in directory V1_sxs_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s~ s > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_sxs_tapvtwmg (56 / 128) 
+INFO: Creating files in directory V1_sxs_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: s~ s > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_cg_epvewmc (57 / 128) 
+INFO: Creating files in directory V1_cg_epvewmc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c g > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c g > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_cg_tapvtwmc (58 / 128) 
+INFO: Creating files in directory V1_cg_tapvtwmc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c g > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c g > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ccx_epvewmg (59 / 128) 
+INFO: Creating files in directory V1_ccx_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c c~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_ccx_tapvtwmg (60 / 128) 
+INFO: Creating files in directory V1_ccx_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c c~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_cxg_epvewmcx (61 / 128) 
+INFO: Creating files in directory V1_cxg_epvewmcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ g > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c~ g > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_cxg_tapvtwmcx (62 / 128) 
+INFO: Creating files in directory V1_cxg_tapvtwmcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ g > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c~ g > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_cxc_epvewmg (63 / 128) 
+INFO: Creating files in directory V1_cxc_epvewmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c~ c > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P1_cxc_tapvtwmg (64 / 128) 
+INFO: Creating files in directory V1_cxc_tapvtwmg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Generating born Feynman diagrams for Process: c~ c > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
+INFO: Writing files in P2_uux_emvexwp (65 / 128) 
+INFO: Creating files in directory V2_uux_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_uux_tamvtxwp (66 / 128) 
+INFO: Creating files in directory V2_uux_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_ddx_emvexwp (67 / 128) 
+INFO: Creating files in directory V2_ddx_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_ddx_tamvtxwp (68 / 128) 
+INFO: Creating files in directory V2_ddx_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_ssx_emvexwp (69 / 128) 
+INFO: Creating files in directory V2_ssx_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_ssx_tamvtxwp (70 / 128) 
+INFO: Creating files in directory V2_ssx_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_uxu_emvexwp (71 / 128) 
+INFO: Creating files in directory V2_uxu_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_uxu_tamvtxwp (72 / 128) 
+INFO: Creating files in directory V2_uxu_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_dxd_emvexwp (73 / 128) 
+INFO: Creating files in directory V2_dxd_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_dxd_tamvtxwp (74 / 128) 
+INFO: Creating files in directory V2_dxd_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_sxs_emvexwp (75 / 128) 
+INFO: Creating files in directory V2_sxs_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_sxs_tamvtxwp (76 / 128) 
+INFO: Creating files in directory V2_sxs_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_ccx_emvexwp (77 / 128) 
+INFO: Creating files in directory V2_ccx_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_ccx_tamvtxwp (78 / 128) 
+INFO: Creating files in directory V2_ccx_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_cxc_emvexwp (79 / 128) 
+INFO: Creating files in directory V2_cxc_emvexwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P2_cxc_tamvtxwp (80 / 128) 
+INFO: Creating files in directory V2_cxc_tamvtxwp 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Generating born Feynman diagrams for Process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
+INFO: Writing files in P3_gu_emvexwpu (81 / 128) 
+INFO: Creating files in directory V3_gu_emvexwpu 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g u > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gu_tamvtxwpu (82 / 128) 
+INFO: Creating files in directory V3_gu_tamvtxwpu 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g u > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gd_emvexwpd (83 / 128) 
+INFO: Creating files in directory V3_gd_emvexwpd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g d > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gd_tamvtxwpd (84 / 128) 
+INFO: Creating files in directory V3_gd_tamvtxwpd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g d > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gs_emvexwps (85 / 128) 
+INFO: Creating files in directory V3_gs_emvexwps 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g s > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gs_tamvtxwps (86 / 128) 
+INFO: Creating files in directory V3_gs_tamvtxwps 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g s > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gux_emvexwpux (87 / 128) 
+INFO: Creating files in directory V3_gux_emvexwpux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u~ > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g u~ > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gux_tamvtxwpux (88 / 128) 
+INFO: Creating files in directory V3_gux_tamvtxwpux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g u~ > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g u~ > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gdx_emvexwpdx (89 / 128) 
+INFO: Creating files in directory V3_gdx_emvexwpdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d~ > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g d~ > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gdx_tamvtxwpdx (90 / 128) 
+INFO: Creating files in directory V3_gdx_tamvtxwpdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g d~ > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g d~ > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gsx_emvexwpsx (91 / 128) 
+INFO: Creating files in directory V3_gsx_emvexwpsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s~ > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g s~ > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gsx_tamvtxwpsx (92 / 128) 
+INFO: Creating files in directory V3_gsx_tamvtxwpsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g s~ > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g s~ > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gc_emvexwpc (93 / 128) 
+INFO: Creating files in directory V3_gc_emvexwpc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g c > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gc_tamvtxwpc (94 / 128) 
+INFO: Creating files in directory V3_gc_tamvtxwpc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g c > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gcx_emvexwpcx (95 / 128) 
+INFO: Creating files in directory V3_gcx_emvexwpcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c~ > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g c~ > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_gcx_tamvtxwpcx (96 / 128) 
+INFO: Creating files in directory V3_gcx_tamvtxwpcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: g c~ > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: g c~ > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ug_emvexwpu (97 / 128) 
+INFO: Creating files in directory V3_ug_emvexwpu 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u g > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u g > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ug_tamvtxwpu (98 / 128) 
+INFO: Creating files in directory V3_ug_tamvtxwpu 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u g > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u g > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_uux_emvexwpg (99 / 128) 
+INFO: Creating files in directory V3_uux_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u u~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_uux_tamvtxwpg (100 / 128) 
+INFO: Creating files in directory V3_uux_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u u~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u u~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_dg_emvexwpd (101 / 128) 
+INFO: Creating files in directory V3_dg_emvexwpd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d g > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d g > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_dg_tamvtxwpd (102 / 128) 
+INFO: Creating files in directory V3_dg_tamvtxwpd 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d g > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d g > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ddx_emvexwpg (103 / 128) 
+INFO: Creating files in directory V3_ddx_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d d~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ddx_tamvtxwpg (104 / 128) 
+INFO: Creating files in directory V3_ddx_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d d~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d d~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_sg_emvexwps (105 / 128) 
+INFO: Creating files in directory V3_sg_emvexwps 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s g > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s g > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_sg_tamvtxwps (106 / 128) 
+INFO: Creating files in directory V3_sg_tamvtxwps 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s g > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s g > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ssx_emvexwpg (107 / 128) 
+INFO: Creating files in directory V3_ssx_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s s~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ssx_tamvtxwpg (108 / 128) 
+INFO: Creating files in directory V3_ssx_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s s~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s s~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_uxg_emvexwpux (109 / 128) 
+INFO: Creating files in directory V3_uxg_emvexwpux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ g > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u~ g > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_uxg_tamvtxwpux (110 / 128) 
+INFO: Creating files in directory V3_uxg_tamvtxwpux 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ g > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u~ g > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_uxu_emvexwpg (111 / 128) 
+INFO: Creating files in directory V3_uxu_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u~ u > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_uxu_tamvtxwpg (112 / 128) 
+INFO: Creating files in directory V3_uxu_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ u > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: u~ u > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_dxg_emvexwpdx (113 / 128) 
+INFO: Creating files in directory V3_dxg_emvexwpdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ g > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d~ g > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_dxg_tamvtxwpdx (114 / 128) 
+INFO: Creating files in directory V3_dxg_tamvtxwpdx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ g > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d~ g > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_dxd_emvexwpg (115 / 128) 
+INFO: Creating files in directory V3_dxd_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d~ d > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_dxd_tamvtxwpg (116 / 128) 
+INFO: Creating files in directory V3_dxd_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ d > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: d~ d > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_sxg_emvexwpsx (117 / 128) 
+INFO: Creating files in directory V3_sxg_emvexwpsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ g > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s~ g > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_sxg_tamvtxwpsx (118 / 128) 
+INFO: Creating files in directory V3_sxg_tamvtxwpsx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ g > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s~ g > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_sxs_emvexwpg (119 / 128) 
+INFO: Creating files in directory V3_sxs_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s~ s > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_sxs_tamvtxwpg (120 / 128) 
+INFO: Creating files in directory V3_sxs_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: s~ s > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: s~ s > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_cg_emvexwpc (121 / 128) 
+INFO: Creating files in directory V3_cg_emvexwpc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c g > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c g > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_cg_tamvtxwpc (122 / 128) 
+INFO: Creating files in directory V3_cg_tamvtxwpc 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c g > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c g > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ccx_emvexwpg (123 / 128) 
+INFO: Creating files in directory V3_ccx_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c c~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_ccx_tamvtxwpg (124 / 128) 
+INFO: Creating files in directory V3_ccx_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c c~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c c~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_cxg_emvexwpcx (125 / 128) 
+INFO: Creating files in directory V3_cxg_emvexwpcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ g > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c~ g > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_cxg_tamvtxwpcx (126 / 128) 
+INFO: Creating files in directory V3_cxg_tamvtxwpcx 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ g > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c~ g > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_cxc_emvexwpg (127 / 128) 
+INFO: Creating files in directory V3_cxc_emvexwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c~ c > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Writing files in P3_cxc_tamvtxwpg (128 / 128) 
+INFO: Creating files in directory V3_cxc_tamvtxwpg 
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: c~ c > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+INFO: Generating born Feynman diagrams for Process: c~ c > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
+History written to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/aTGCstudy_cpodd_ww_wvmass600to800/Cards/proc_card_mg5.dat
+ALOHA: aloha creates FFV8 routines
+ALOHA: aloha creates FFV2 routines
+ALOHA: aloha creates FFV3 routines
+ALOHA: aloha creates FFV1 routines
+ALOHA: aloha creates FFV6 routines
+ALOHA: aloha creates FFV7 routines
+ALOHA: aloha creates FFV4 routines
+ALOHA: aloha creates FFV5 routines
+ALOHA: aloha creates VVV10 routines
+ALOHA: aloha creates VVV11 routines
+ALOHA: aloha creates FF3 routines
+ALOHA: aloha creates VVVV12 routines
+ALOHA: aloha creates VVV8 routines
+ALOHA: aloha creates FF4 routines
+ALOHA: aloha creates VVV2 routines
+ALOHA: aloha creates VVV3 routines
+ALOHA: aloha creates VVV1 routines
+ALOHA: aloha creates VVV7 routines
+ALOHA: aloha creates VVV4 routines
+ALOHA: aloha creates FF2 routines
+ALOHA: aloha creates FF1 routines
+ALOHA: aloha creates VVV5 routines
+ALOHA: aloha creates FFV2_8 routines
+ALOHA: aloha creates FFV2_7 routines
+ALOHA: aloha creates FF2_3 routines
+ALOHA: aloha creates VVV10_11_2_3_5_7_8 routines
+ALOHA: aloha creates VVV1_10_11_4 routines
+ALOHA: aloha creates FFV2_3 routines
+ALOHA: aloha creates FFV1_6 routines
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/aTGCstudy_cpodd_ww_wvmass600to800/Cards/amcatnlo_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate web pages 
+Type "launch" to generate events from this process, or see
+/srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/aTGCstudy_cpodd_ww_wvmass600to800/README
+Run "open index.html" to see more information about this process.
+display multiparticles
+Multiparticle labels:
+ell+ = e+ mu+ ta+
+all = g ghg ghg~ u d s u~ d~ s~ a gha gha~ ve vm vt e- mu- ta- ve~ vm~ vt~ e+ mu+ ta+ c t b c~ t~ b~ z w+ ghz ghwp ghwm h w- ghz~ ghwp~ ghwm~
+l- = e- mu-
+ell- = e- mu- ta-
+v = w+ w-
+j = g u d s u~ d~ s~ c c~
+vl = ve vm vt
+l+ = e+ mu+
+p = g u d s u~ d~ s~ c c~
+vl~ = ve~ vm~ vt~
+quit
+ 
+
+ 
+
+job finished step CODEGEN, exiting now.
