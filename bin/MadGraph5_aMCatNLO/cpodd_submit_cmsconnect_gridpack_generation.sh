@@ -13,7 +13,7 @@ cat<<-EOF
 	Output = condor_log/job.out.\$(Cluster)-\$(Process) 
 	Log = condor_log/job.log.\$(Cluster) 
 	
-	transfer_input_files = $input_files, cpodd_gridpack_generation.sh, /usr/bin/unzip, EWdim6NLO.tar.gz
+	transfer_input_files = $input_files, cpodd_gridpack_generation.sh, /usr/bin/unzip
 	transfer_output_files = ${card_name}.log
 	transfer_output_remaps = "${card_name}.log = ${card_name}_codegen.log"
 	+WantIOProxy=true

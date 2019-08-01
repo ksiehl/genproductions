@@ -8,7 +8,7 @@
 #*                *                       *                 *
 #*                                                          *
 #*                                                          *
-#*         VERSION 5.2.6.0               20xx-xx-xx         *
+#*         VERSION 5.2.6.5               20xx-xx-xx         *
 #*                                                          *
 #*    The MadGraph5_aMC@NLO Development Team - Find us at   *
 #*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
@@ -24,15 +24,15 @@
 #************************************************************
 reweight pilotrun -from_cards
 Traceback (most recent call last):
-  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/extended_cmd.py", line 1438, in onecmd
+  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/extended_cmd.py", line 1514, in onecmd
     return self.onecmd_orig(line, **opt)
-  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/extended_cmd.py", line 1392, in onecmd_orig
+  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/extended_cmd.py", line 1463, in onecmd_orig
     return func(arg, **opt)
-  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/common_run_interface.py", line 1980, in do_reweight
+  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/common_run_interface.py", line 2121, in do_reweight
     self.check_decay_events(args)
-  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/common_run_interface.py", line 500, in check_decay_events
+  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/common_run_interface.py", line 507, in check_decay_events
     args[0] = self.get_events_path(args[0])
-  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/common_run_interface.py", line 549, in get_events_path
+  File "/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/common_run_interface.py", line 557, in get_events_path
     raise self.InvalidCmd('No events file corresponding to %s run. ' % run_name)
 InvalidCmd: No events file corresponding to pilotrun run. 
 Value of current Options:
@@ -51,7 +51,7 @@ Value of current Options:
     cluster_status_update 	:	(300, 120)
              cluster_time 	:	None
             f2py_compiler 	:	None
-                    ninja 	:	/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/HEPTools/lib
+                    ninja 	:	/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/HEPTools/lib
                hepmc_path 	:	None
              pythia8_path 	:	None
                 hwpp_path 	:	None
@@ -59,7 +59,7 @@ Value of current Options:
        cluster_retry_wait 	:	30
              stdout_level 	:	None
           pythia-pgs_path 	:	None
-                 mg5_path 	:	/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0
+                 mg5_path 	:	/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5
                   td_path 	:	None
              delphes_path 	:	None
               thepeg_path 	:	None
@@ -88,7 +88,7 @@ Value of current Options:
 #*                *                       *                 *
 #*                                                          *
 #*                                                          *
-#*         VERSION 2.6.0                 2017-08-16         *
+#*         VERSION 2.6.5                 2018-02-03         *
 #*                                                          *
 #*    The MadGraph5_aMC@NLO Development Team - Find us at   *
 #*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
@@ -100,6 +100,7 @@ Value of current Options:
 #*     run as ./bin/mg5_aMC  filename                       *
 #*                                                          *
 #************************************************************
+set default_unset_couplings 99
 set group_subprocesses Auto
 set ignore_six_quark_processes False
 set loop_optimized_output True
@@ -232,6 +233,35 @@ DECAY  14 0.000000 # vm : 0.0
 DECAY  16 0.000000 # vt : 0.0 
 DECAY  21 0.000000 # g : 0.0 
 DECAY  22 0.000000 # a : 0.0 
+#===========================================================
+# QUANTUM NUMBERS OF NEW STATE(S) (NON SM PDG CODE)
+#===========================================================
+
+Block QNUMBERS 9000001  # gha 
+        1 0  # 3 times electric charge
+        2 1  # number of spin states (2S+1)
+        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)
+        4 1  # Particle/Antiparticle distinction (0=own anti)
+Block QNUMBERS 9000002  # ghz 
+        1 0  # 3 times electric charge
+        2 1  # number of spin states (2S+1)
+        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)
+        4 1  # Particle/Antiparticle distinction (0=own anti)
+Block QNUMBERS 9000003  # ghwp 
+        1 3  # 3 times electric charge
+        2 1  # number of spin states (2S+1)
+        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)
+        4 1  # Particle/Antiparticle distinction (0=own anti)
+Block QNUMBERS 9000004  # ghwm 
+        1 -3  # 3 times electric charge
+        2 1  # number of spin states (2S+1)
+        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)
+        4 1  # Particle/Antiparticle distinction (0=own anti)
+Block QNUMBERS 82  # ghg 
+        1 0  # 3 times electric charge
+        2 1  # number of spin states (2S+1)
+        3 8  # colour rep (1: singlet, 3: triplet, 8: octet)
+        4 1  # Particle/Antiparticle distinction (0=own anti)
 #***********************************************************************
 #                        MadGraph5_aMC@NLO                             *
 #                                                                      *

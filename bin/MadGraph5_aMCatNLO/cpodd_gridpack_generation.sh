@@ -71,7 +71,7 @@ make_gridpack () {
     MGBASEDIR=mgbasedir
     
     MG_EXT=".tar.gz"
-    MG=MG5_aMC_v2.6.0$MG_EXT
+    MG=MG5_aMC_v2.6.5$MG_EXT
     MGSOURCE=https://cms-project-generators.web.cern.ch/cms-project-generators/$MG
     
     MGBASEDIRORIG=$(echo ${MG%$MG_EXT} | tr "." "_")
@@ -193,7 +193,7 @@ make_gridpack () {
           #get needed BSM model
           if [[ $model = *[!\ ]* ]]; then
             echo "Loading extra model $model"
-            #wget --no-check-certificate https://cms-project-generators.web.cern.ch/cms-project-generators/$model	
+            wget --no-check-certificate https://cms-project-generators.web.cern.ch/cms-project-generators/$model	
 	    if [ ! -e EWdim6NLO.tar.gz ]; then
 	       cp $PRODHOME/EWdim6NLO.tar.gz .
 	    fi

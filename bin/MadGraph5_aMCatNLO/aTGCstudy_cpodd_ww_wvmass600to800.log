@@ -1,4 +1,4 @@
-Starting job on  Wed Jul 17 13:05:19 CDT 2019
+Starting job on  Mon Jul 29 15:07:45 CDT 2019
 Running on  Linux login.uscms.org 4.9.120-1.ultra.el6.x86_64 #1 SMP Fri Aug 17 10:19:23 CDT 2018 x86_64 x86_64 x86_64 GNU/Linux
 System release  Scientific Linux release 6.10 (Carbon)
 name: aTGCstudy_cpodd_ww_wvmass600to800
@@ -37,7 +37,7 @@ INFO: ************************************************************
 *                   *        * *        *                  *
 *                 *                       *                *
 *                                                          *
-*         VERSION 5.2.6.0               20xx-xx-xx         *
+*         VERSION 5.2.6.5               20xx-xx-xx         *
 *                                                          *
 *    The MadGraph5_aMC@NLO Development Team - Find us at   *
 *                 http://amcatnlo.cern.ch                  *
@@ -46,15 +46,17 @@ INFO: ************************************************************
 *                                                          *
 ************************************************************ 
 INFO: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
-INFO: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt  
+INFO: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt  
 INFO: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
 Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
 No valid eps viewer found. Please set in ./input/mg5_configuration.txt
 No valid web browser found. Please set in ./input/mg5_configuration.txt
+cluster_class cms_condor
+['/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/PLUGIN']
 [1;34mPlugin PLUGIN.CMS_CLUSTER has marked as NOT being validated with this version. 
 It has been validated for the last time with version: 2.6.0[0m
-[1;60mINFO: cluster handling will be done with PLUGIN: CMS_CLUSTER [0m
-[1;60mINFO: cluster handling will be done with PLUGIN: CMS_CLUSTER [0m
+[1mcluster handling will be done with PLUGIN: CMS_CLUSTER[0m
+<type 'type'>
 reweight pilotrun
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
@@ -63,7 +65,9 @@ Do you want to edit a card (press enter to bypass editing)?
  you can also
    - enter the path to a valid card.
  [[4m0[0m, done, 1, reweight, enter path][90s to answer] 
->INFO: Update the dependent parameter of the param_card.dat 
+>[1;34mrun_card missed argument pt_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument pt_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument mxx_min_pdg. Takes default: {}[0m
 [1;32mDEBUG: [?1034hNo module named madgraph [0m
 [1;32mDEBUG: /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/bin/internal/me5_logging.conf [0m
 [1;32mDEBUG: INFO: ************************************************************ [0m
@@ -77,7 +81,7 @@ Do you want to edit a card (press enter to bypass editing)?
 [1;32mDEBUG: *                   *        * *        *                  * [0m
 [1;32mDEBUG: *                 *                       *                * [0m
 [1;32mDEBUG: *                                                          * [0m
-[1;32mDEBUG: *         VERSION 5.2.6.0               20xx-xx-xx         * [0m
+[1;32mDEBUG: *         VERSION 5.2.6.5               20xx-xx-xx         * [0m
 [1;32mDEBUG: *                                                          * [0m
 [1;32mDEBUG: *    The MadGraph5_aMC@NLO Development Team - Find us at   * [0m
 [1;32mDEBUG: *                 http://amcatnlo.cern.ch                  * [0m
@@ -86,16 +90,21 @@ Do you want to edit a card (press enter to bypass editing)?
 [1;32mDEBUG: *                                                          * [0m
 [1;32mDEBUG: ************************************************************  [0m
 REWEIGHT: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
-REWEIGHT: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt  
+REWEIGHT: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt  
 REWEIGHT: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
 [1;32mDEBUG: Using default text editor "vi". Set another one in ./input/mg5_configuration.txt [0m
 [1;32mDEBUG: No valid eps viewer found. Please set in ./input/mg5_configuration.txt [0m
 [1;32mDEBUG: No valid web browser found. Please set in ./input/mg5_configuration.txt [0m
+[1;32mDEBUG: cluster_class cms_condor [0m
+[1;32mDEBUG: ['/local-scratch/ksiehl/genproductions/bin/MadGraph5_aMCatNLO/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/PLUGIN'] [0m
 [1;32mDEBUG: [1;34mPlugin PLUGIN.CMS_CLUSTER has marked as NOT being validated with this version.  [0m
 [1;32mDEBUG: It has been validated for the last time with version: 2.6.0[0m [0m
-[1;60mREWEIGHT: cluster handling will be done with PLUGIN: CMS_CLUSTER [0m
-[1;60mREWEIGHT: cluster handling will be done with PLUGIN: CMS_CLUSTER [0m
+[1;32mDEBUG: [1mcluster handling will be done with PLUGIN: CMS_CLUSTER[0m [0m
+[1;32mDEBUG: <type 'type'> [0m
 [1;32mDEBUG: reweight pilotrun -from_cards [0m
+[1;32mDEBUG: [1;34mrun_card missed argument pt_min_pdg. Takes default: {}[0m [0m
+[1;32mDEBUG: [1;34mrun_card missed argument pt_max_pdg. Takes default: {}[0m [0m
+[1;32mDEBUG: [1;34mrun_card missed argument mxx_min_pdg. Takes default: {}[0m [0m
 [1;32mDEBUG: [1;31mCommand "reweight pilotrun -from_cards" interrupted with error: [0m
 [1;32mDEBUG: InvalidCmd : No events file corresponding to pilotrun run.  [0m
 [1;32mDEBUG: Please report this bug on https://bugs.launchpad.net/mg5amcnlo [0m
@@ -103,8 +112,6 @@ REWEIGHT: load configuration from /local-scratch/ksiehl/genproductions/bin/MadGr
 [1;32mDEBUG: Please attach this file to your report.[0m [0m
 [1;32mDEBUG: quit [0m
 REWEIGHT:  
-[1;32mDEBUG:   [0m
 quit
 INFO:  
- 
 finished pilot run

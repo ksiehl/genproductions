@@ -1,5 +1,5 @@
-Starting job on  Wed Jul 17 15:44:44 UTC 2019
-Running on  Linux wp-09-04.lnl.infn.it 2.6.32-754.6.3.el6.x86_64 #1 SMP Tue Oct 9 11:31:50 CDT 2018 x86_64 x86_64 x86_64 GNU/Linux
+Starting job on  Mon Jul 29 18:10:55 UTC 2019
+Running on  Linux wna174.jinr-t1.ru 2.6.32-754.17.1.el6.x86_64 #1 SMP Tue Jul 2 08:51:06 CDT 2019 x86_64 x86_64 x86_64 GNU/Linux
 System release  CentOS release 6.10 (Final)
 name: aTGCstudy_cpodd_ww_wvmass600to800
 carddir: cards/production/pre2017/13TeV/WVTolnujj_cpodd/aTGCstudy_cpodd_ww_wvmass600to800
@@ -14,27 +14,39 @@ patching file models/sm/restrict_ckm_no_b_mass.dat
 patching file models/sm/restrict_lepton_masses_no_b_mass.dat
 patching file Template/NLO/SubProcesses/MCmasses_PYTHIA8.inc
 patching file Template/LO/bin/internal/Gridpack/run.sh
+Hunk #1 FAILED at 78.
+1 out of 1 hunk FAILED -- saving rejects to file Template/LO/bin/internal/Gridpack/run.sh.rej
 patching file madgraph/interface/loop_interface.py
-Hunk #1 succeeded at 500 (offset 2 lines).
+Hunk #1 FAILED at 498.
+1 out of 1 hunk FAILED -- saving rejects to file madgraph/interface/loop_interface.py.rej
 patching file madgraph/various/systematics.py
-Hunk #1 succeeded at 314 (offset 86 lines).
-Hunk #2 succeeded at 348 (offset 87 lines).
-Hunk #3 succeeded at 512 (offset 96 lines).
+Hunk #1 succeeded at 325 (offset 97 lines).
+Hunk #2 succeeded at 359 (offset 98 lines).
+Hunk #3 succeeded at 533 (offset 117 lines).
 patching file Template/LO/Source/.make_opts
+Hunk #1 FAILED at 49.
+Hunk #2 succeeded at 118 (offset 4 lines).
+1 out of 2 hunks FAILED -- saving rejects to file Template/LO/Source/.make_opts.rej
 patching file Template/NLO/Source/make_opts.inc
 patching file madgraph/iolibs/export_v4.py
-Hunk #1 succeeded at 502 (offset 4 lines).
+Hunk #1 succeeded at 521 (offset 23 lines).
 patching file madgraph/iolibs/template_files/pdf_opendata.f
 patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+Hunk #2 succeeded at 38 with fuzz 1.
 patching file Template/LO/SubProcesses/refine.sh
 patching file Template/LO/SubProcesses/refine_splitted.sh
 patching file Template/LO/SubProcesses/survey.sh
 patching file Template/NLO/SubProcesses/ajob_template
 patching file Template/NLO/SubProcesses/reweight_xsec_events.local
 patching file Template/LO/Source/.make_opts
+Hunk #1 succeeded at 100 (offset 4 lines).
 patching file Template/LO/Source/PDF/pdf_lhapdf6.cc
+Hunk #1 succeeded at 16 with fuzz 2 (offset 4 lines).
 patching file Template/NLO/Source/PDF/pdf_lhapdf6.cc
+Hunk #1 succeeded at 16 with fuzz 2 (offset 4 lines).
 patching file Template/NLO/Source/make_opts.inc
+Hunk #1 FAILED at 86.
+1 out of 1 hunk FAILED -- saving rejects to file Template/NLO/Source/make_opts.inc.rej
 patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
 patching file Template/LO/SubProcesses/refine.sh
 patching file Template/LO/SubProcesses/refine_splitted.sh
@@ -42,23 +54,46 @@ patching file Template/LO/SubProcesses/survey.sh
 patching file Template/NLO/SubProcesses/ajob_template
 patching file Template/NLO/SubProcesses/reweight_xsec_events.local
 patching file madgraph/iolibs/export_v4.py
-Hunk #1 succeeded at 1742 (offset 3 lines).
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file madgraph/iolibs/export_v4.py.rej
 patching file MadSpin/interface_madspin.py
+Hunk #1 FAILED at 1021.
+Hunk #2 FAILED at 1462.
+2 out of 2 hunks FAILED -- saving rejects to file MadSpin/interface_madspin.py.rej
 patching file MadSpin/interface_madspin.py
+Hunk #1 FAILED at 641.
+1 out of 1 hunk FAILED -- saving rejects to file MadSpin/interface_madspin.py.rej
 patching file madgraph/interface/reweight_interface.py
+Hunk #1 succeeded at 1885 (offset 37 lines).
 patching file madgraph/interface/common_run_interface.py
+Hunk #1 succeeded at 1701 (offset 101 lines).
 patching file madgraph/interface/madgraph_interface.py
-Hunk #1 succeeded at 5743 (offset -97 lines).
+Hunk #1 FAILED at 5840.
+1 out of 1 hunk FAILED -- saving rejects to file madgraph/interface/madgraph_interface.py.rej
 patching file madgraph/various/systematics.py
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file madgraph/various/systematics.py.rej
 patching file Template/LO/SubProcesses/refine.sh
 patching file Template/LO/SubProcesses/refine_splitted.sh
 patching file Template/LO/SubProcesses/survey.sh
 patching file Template/NLO/SubProcesses/ajob_template
 patching file Template/NLO/SubProcesses/reweight_xsec_events.local
 patching file Template/loop_material/StandAlone/SubProcesses/makefile
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file Template/loop_material/StandAlone/SubProcesses/makefile.rej
 patching file madgraph/interface/reweight_interface.py
-Hunk #1 succeeded at 458 with fuzz 1 (offset -9 lines).
+Reversed (or previously applied) patch detected!  Assume -R? [n] 
+Apply anyway? [n] 
+Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file madgraph/interface/reweight_interface.py.rej
 patching file madgraph/various/misc.py
+Hunk #1 succeeded at 450 (offset 48 lines).
 local path is not an afs path, batch jobs will use worker node scratch space instead of afs
 ************************************************************
 *                                                          *
@@ -72,7 +107,7 @@ local path is not an afs path, batch jobs will use worker node scratch space ins
 *                   *        * *        *                  *
 *                 *                       *                *
 *                                                          *
-*         VERSION 2.6.0                 2017-08-16         *
+*         VERSION 2.6.5                 2018-02-03         *
 *                                                          *
 *    The MadGraph5_aMC@NLO Development Team - Find us at   *
 *    https://server06.fynu.ucl.ac.be/projects/madgraph     *
@@ -95,111 +130,64 @@ Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (inclu
 Note that you can still compile and run aMC@NLO with the built-in PDFs
  MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
 
-Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
 No valid eps viewer found. Please set in ./input/mg5_configuration.txt
 No valid web browser found. Please set in ./input/mg5_configuration.txt
-import /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/mgconfigscript
+import /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/mgconfigscript
 The import format was not given, so we guess it as command
 set auto_update 0
 save options auto_update
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set automatic_html_opening False
 This option will be the default in any output that you are going to create in this session.
 In order to keep this changes permanent please run 'save options'
 set output_dependencies internal
 save options output_dependencies
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set lhapdf /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda/share/LHAPDF/../../bin/lhapdf-config
 set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda/share/LHAPDF/../../bin/lhapdf-config
 save options lhapdf
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set run_mode  1
 This option will be the default in any output that you are going to create in this session.
 In order to keep this changes permanent please run 'save options'
 set cluster_type cms_condor
 save options cluster_type
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set cluster_queue None
 save options cluster_queue
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set cluster_status_update 300 120
 save options cluster_status_update
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set cluster_nb_retry 10
 save options cluster_nb_retry
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set cluster_retry_wait 300
 save options cluster_retry_wait
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set cluster_retry_wait 30
 save options cluster_retry_wait
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 save options
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 quit
- 
-
- 
-
 Loading extra models specified in /srv/cards/production/pre2017/13TeV/WVTolnujj_cpodd/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_extramodels.dat
 Loading extra model EWdim6NLO.tar.gz
-EWdim6NLO/
-EWdim6NLO/couplings.pyo
-EWdim6NLO/decays.py
-EWdim6NLO/restrict_no_cmass_cpodd.dat
-EWdim6NLO/__init__.pyc
-EWdim6NLO/function_library.py
-EWdim6NLO/vertices.py
 EWdim6NLO/CT_couplings.py
-EWdim6NLO/CT_couplings.pyc
-EWdim6NLO/vertices.pyo
-EWdim6NLO/object_library.py
-EWdim6NLO/lorentz.pyo
-EWdim6NLO/parameters.pyo
-EWdim6NLO/CT_vertices.pyc
-EWdim6NLO/propagators.py
-EWdim6NLO/parameters.py
-EWdim6NLO/EWdim6NLO.log
-EWdim6NLO/object_library.pyc
-EWdim6NLO/restrict_no_cbmass_cwwwcbcw.dat
-EWdim6NLO/write_param_card.pyc
-EWdim6NLO/CT_vertices.pyo
-EWdim6NLO/restrict_no_cmass.dat
-EWdim6NLO/lorentz.pyc
-EWdim6NLO/restrict_no_cmass_cwwwcbcw.dat
-EWdim6NLO/coupling_orders.py
-EWdim6NLO/restrict_no_cmass_cwwonly.dat
-EWdim6NLO/propagators.pyc
-EWdim6NLO/__init__.pyo
-EWdim6NLO/restrict_no_cmass_cwonly.dat
-EWdim6NLO/parameters.pyc
-EWdim6NLO/lorentz.py
-EWdim6NLO/object_library.pyo
-EWdim6NLO/vertices.pyc
-EWdim6NLO/write_param_card.py
-EWdim6NLO/model.pkl
-EWdim6NLO/restrict_no_cmass_SM.dat
-EWdim6NLO/function_library.pyo
-EWdim6NLO/particles.pyc
-EWdim6NLO/restrict_no_cbmass_cpodd.dat
-EWdim6NLO/restrict_no_cmass_cbonly.dat
-EWdim6NLO/CT_couplings.pyo
-EWdim6NLO/coupling_orders.pyo
-EWdim6NLO/restrict_no_cmass_cwwwcbcw_wz_short.dat
-EWdim6NLO/coupling_orders.pyc
-EWdim6NLO/decays.pyc
-EWdim6NLO/write_param_card.pyo
-EWdim6NLO/couplings.py
-EWdim6NLO/particles.py
-EWdim6NLO/particles.pyo
-EWdim6NLO/__init__.py
-EWdim6NLO/propagators.pyo
 EWdim6NLO/CT_vertices.py
-EWdim6NLO/restrict_no_cmass_cwcbcwwwOnly.dat
-EWdim6NLO/decays.pyo
-EWdim6NLO/couplings.pyc
-EWdim6NLO/function_library.pyc
-EWdim6NLO/dec_model.pkl
+EWdim6NLO/EWdim6NLO.log
+EWdim6NLO/__init__.py
+EWdim6NLO/coupling_orders.py
+EWdim6NLO/couplings.py
+EWdim6NLO/decays.py
+EWdim6NLO/function_library.py
+EWdim6NLO/lorentz.py
+EWdim6NLO/object_library.py
+EWdim6NLO/parameters.py
+EWdim6NLO/particles.py
+EWdim6NLO/propagators.py
+EWdim6NLO/vertices.py
+EWdim6NLO/write_param_card.py
 /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work
 ************************************************************
 *                                                          *
@@ -213,7 +201,7 @@ EWdim6NLO/dec_model.pkl
 *                   *        * *        *                  *
 *                 *                       *                *
 *                                                          *
-*         VERSION 2.6.0                 2017-08-16         *
+*         VERSION 2.6.5                 2018-02-03         *
 *                                                          *
 *    The MadGraph5_aMC@NLO Development Team - Find us at   *
 *    https://server06.fynu.ucl.ac.be/projects/madgraph     *
@@ -226,19 +214,17 @@ EWdim6NLO/dec_model.pkl
 *    Type 'tutorial MadLoop' to learn how MadLoop works    *
 *                                                          *
 ************************************************************
-load MG5 configuration from MG5_aMC_v2_6_0/input/mg5_configuration.txt 
+load MG5 configuration from MG5_aMC_v2_6_5/input/mg5_configuration.txt 
 None does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
  Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
  MG5_aMC> set fastjet /PATH/TO/fastjet-config
 
 set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda/share/LHAPDF/../../bin/lhapdf-config
-Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
 No valid eps viewer found. Please set in ./input/mg5_configuration.txt
 No valid web browser found. Please set in ./input/mg5_configuration.txt
 import /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/aTGCstudy_cpodd_ww_wvmass600to800_proc_card.dat
 The import format was not given, so we guess it as command
 import model EWdim6NLO
-INFO: reload from .py file 
 INFO: load particles 
 INFO: load vertices 
 INFO: Change particles name to pass to MG5 convention 
@@ -864,7 +850,7 @@ INFO: Generating virtual matrix elements using MadLoop:
 INFO: Generating virtual matrix element with MadLoop for process: c~ c > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 (72 / 72) 
 INFO: Generated 72 subprocesses with 16893 real emission diagrams, 1224 born diagrams and 11880 virtual diagrams 
 output aTGCstudy_cpodd_ww_wvmass600to800 -nojpeg
-[1;60mFirst output using loop matrix-elements has been detected. Now asking for loop reduction:[0m
+[1mFirst output using loop matrix-elements has been detected. Now asking for loop reduction:[0m
 For loop computations, MadLoop requires dedicated tools to perform the reduction of loop Feynman diagrams using OPP-based and/or TIR approaches.
 
 Which one do you want to install? (this needs to be done only once)
@@ -884,26 +870,26 @@ You can:
 [1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
 set golem ''
 save options golem
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 save options golem
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set pjfry ''
 save options pjfry
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 save options pjfry
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 set collier ''
 save options collier
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 save options collier
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 install ninja
-[1;60m   You are installing 'ninja', please cite ref(s): [92marXiv:1203.0291, arXiv:1403.1229, arXiv:1604.01363[0m. [0m
+[1m   You are installing 'ninja', please cite ref(s): [92marXiv:1203.0291, arXiv:1403.1229, arXiv:1604.01363[0m. [0m
 Downloading the HEPToolInstaller at:
-   http://madgraph.physics.illinois.edu/Downloads/HEPToolsInstaller/HEPToolsInstaller_V119.tar.gz
+   http://madgraph.phys.ucl.ac.be/Downloads/HEPToolsInstaller/HEPToolsInstaller_V119.tar.gz
 Now installing ninja. Be patient...
-[1;32mninja successfully installed in /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/HEPTools.[0m
-save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_0/input/mg5_configuration.txt
+[1;32mninja successfully installed in /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/HEPTools.[0m
+save configuration file to /srv/aTGCstudy_cpodd_ww_wvmass600to800/aTGCstudy_cpodd_ww_wvmass600to800_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
 INFO: Writing out the aMC@NLO code, using optimized Loops 
 INFO: initialize a new directory: aTGCstudy_cpodd_ww_wvmass600to800 
 INFO: remove old information in aTGCstudy_cpodd_ww_wvmass600to800 
@@ -1238,640 +1224,763 @@ INFO: Drawing loop Feynman diagrams for Process: u u~ > e+ ve w- NP<=2 QED<=3 [ 
 INFO: Generating born Feynman diagrams for Process: u u~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_uux_tapvtwm (2 / 128) 
 INFO: Creating files in directory V0_uux_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: u u~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_ddx_epvewm (3 / 128) 
 INFO: Creating files in directory V0_ddx_epvewm 
-ALOHA: aloha creates FFV3 set of routines with options: L2
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: d d~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_ddx_tapvtwm (4 / 128) 
 INFO: Creating files in directory V0_ddx_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: d d~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_ssx_epvewm (5 / 128) 
 INFO: Creating files in directory V0_ssx_epvewm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: s s~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_ssx_tapvtwm (6 / 128) 
 INFO: Creating files in directory V0_ssx_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: s s~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_uxu_epvewm (7 / 128) 
 INFO: Creating files in directory V0_uxu_epvewm 
-ALOHA: aloha creates FFV1 set of routines with options: L1
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: u~ u > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_uxu_tapvtwm (8 / 128) 
 INFO: Creating files in directory V0_uxu_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: u~ u > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_dxd_epvewm (9 / 128) 
 INFO: Creating files in directory V0_dxd_epvewm 
-ALOHA: aloha creates FFV3 set of routines with options: L1
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: d~ d > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_dxd_tapvtwm (10 / 128) 
 INFO: Creating files in directory V0_dxd_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: d~ d > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_sxs_epvewm (11 / 128) 
 INFO: Creating files in directory V0_sxs_epvewm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: s~ s > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_sxs_tapvtwm (12 / 128) 
 INFO: Creating files in directory V0_sxs_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: s~ s > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_ccx_epvewm (13 / 128) 
 INFO: Creating files in directory V0_ccx_epvewm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: c c~ > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_ccx_tapvtwm (14 / 128) 
 INFO: Creating files in directory V0_ccx_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: c c~ > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_cxc_epvewm (15 / 128) 
 INFO: Creating files in directory V0_cxc_epvewm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: c~ c > e+ ve w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P0_cxc_tapvtwm (16 / 128) 
 INFO: Creating files in directory V0_cxc_tapvtwm 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Generating born Feynman diagrams for Process: c~ c > ta+ vt w- NP<=2 QED<=3 [ all = QCD ] $$ t t~ h 
 INFO: Writing files in P1_gu_epvewmu (17 / 128) 
 INFO: Creating files in directory V1_gu_epvewmu 
-ALOHA: aloha creates VVV8 set of routines with options: L2,P0
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g u > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gu_tapvtwmu (18 / 128) 
 INFO: Creating files in directory V1_gu_tapvtwmu 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g u > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gd_epvewmd (19 / 128) 
 INFO: Creating files in directory V1_gd_epvewmd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g d > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gd_tapvtwmd (20 / 128) 
 INFO: Creating files in directory V1_gd_tapvtwmd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g d > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gs_epvewms (21 / 128) 
 INFO: Creating files in directory V1_gs_epvewms 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g s > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gs_tapvtwms (22 / 128) 
 INFO: Creating files in directory V1_gs_tapvtwms 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g s > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gux_epvewmux (23 / 128) 
 INFO: Creating files in directory V1_gux_epvewmux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u~ > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g u~ > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gux_tapvtwmux (24 / 128) 
 INFO: Creating files in directory V1_gux_tapvtwmux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u~ > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g u~ > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gdx_epvewmdx (25 / 128) 
 INFO: Creating files in directory V1_gdx_epvewmdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d~ > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g d~ > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gdx_tapvtwmdx (26 / 128) 
 INFO: Creating files in directory V1_gdx_tapvtwmdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d~ > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g d~ > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gsx_epvewmsx (27 / 128) 
 INFO: Creating files in directory V1_gsx_epvewmsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s~ > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g s~ > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gsx_tapvtwmsx (28 / 128) 
 INFO: Creating files in directory V1_gsx_tapvtwmsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s~ > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g s~ > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gc_epvewmc (29 / 128) 
 INFO: Creating files in directory V1_gc_epvewmc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g c > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gc_tapvtwmc (30 / 128) 
 INFO: Creating files in directory V1_gc_tapvtwmc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g c > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gcx_epvewmcx (31 / 128) 
 INFO: Creating files in directory V1_gcx_epvewmcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c~ > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g c~ > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_gcx_tapvtwmcx (32 / 128) 
 INFO: Creating files in directory V1_gcx_tapvtwmcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c~ > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: g c~ > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ug_epvewmu (33 / 128) 
 INFO: Creating files in directory V1_ug_epvewmu 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u g > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u g > e+ ve w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ug_tapvtwmu (34 / 128) 
 INFO: Creating files in directory V1_ug_tapvtwmu 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u g > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u g > ta+ vt w- u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_uux_epvewmg (35 / 128) 
 INFO: Creating files in directory V1_uux_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u u~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u u~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_uux_tapvtwmg (36 / 128) 
 INFO: Creating files in directory V1_uux_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u u~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u u~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_dg_epvewmd (37 / 128) 
 INFO: Creating files in directory V1_dg_epvewmd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d g > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d g > e+ ve w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_dg_tapvtwmd (38 / 128) 
 INFO: Creating files in directory V1_dg_tapvtwmd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d g > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d g > ta+ vt w- d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ddx_epvewmg (39 / 128) 
 INFO: Creating files in directory V1_ddx_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d d~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ddx_tapvtwmg (40 / 128) 
 INFO: Creating files in directory V1_ddx_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d d~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_sg_epvewms (41 / 128) 
 INFO: Creating files in directory V1_sg_epvewms 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s g > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s g > e+ ve w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_sg_tapvtwms (42 / 128) 
 INFO: Creating files in directory V1_sg_tapvtwms 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s g > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s g > ta+ vt w- s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ssx_epvewmg (43 / 128) 
 INFO: Creating files in directory V1_ssx_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s s~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ssx_tapvtwmg (44 / 128) 
 INFO: Creating files in directory V1_ssx_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s s~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_uxg_epvewmux (45 / 128) 
 INFO: Creating files in directory V1_uxg_epvewmux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ g > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u~ g > e+ ve w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_uxg_tapvtwmux (46 / 128) 
 INFO: Creating files in directory V1_uxg_tapvtwmux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ g > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u~ g > ta+ vt w- u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_uxu_epvewmg (47 / 128) 
 INFO: Creating files in directory V1_uxu_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u~ u > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_uxu_tapvtwmg (48 / 128) 
 INFO: Creating files in directory V1_uxu_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: u~ u > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_dxg_epvewmdx (49 / 128) 
 INFO: Creating files in directory V1_dxg_epvewmdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ g > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d~ g > e+ ve w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_dxg_tapvtwmdx (50 / 128) 
 INFO: Creating files in directory V1_dxg_tapvtwmdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ g > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d~ g > ta+ vt w- d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_dxd_epvewmg (51 / 128) 
 INFO: Creating files in directory V1_dxd_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d~ d > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_dxd_tapvtwmg (52 / 128) 
 INFO: Creating files in directory V1_dxd_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: d~ d > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_sxg_epvewmsx (53 / 128) 
 INFO: Creating files in directory V1_sxg_epvewmsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ g > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s~ g > e+ ve w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_sxg_tapvtwmsx (54 / 128) 
 INFO: Creating files in directory V1_sxg_tapvtwmsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ g > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s~ g > ta+ vt w- s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_sxs_epvewmg (55 / 128) 
 INFO: Creating files in directory V1_sxs_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s~ s > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_sxs_tapvtwmg (56 / 128) 
 INFO: Creating files in directory V1_sxs_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: s~ s > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_cg_epvewmc (57 / 128) 
 INFO: Creating files in directory V1_cg_epvewmc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c g > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c g > e+ ve w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_cg_tapvtwmc (58 / 128) 
 INFO: Creating files in directory V1_cg_tapvtwmc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c g > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c g > ta+ vt w- c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ccx_epvewmg (59 / 128) 
 INFO: Creating files in directory V1_ccx_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c c~ > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_ccx_tapvtwmg (60 / 128) 
 INFO: Creating files in directory V1_ccx_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c c~ > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_cxg_epvewmcx (61 / 128) 
 INFO: Creating files in directory V1_cxg_epvewmcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ g > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c~ g > e+ ve w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_cxg_tapvtwmcx (62 / 128) 
 INFO: Creating files in directory V1_cxg_tapvtwmcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ g > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c~ g > ta+ vt w- c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_cxc_epvewmg (63 / 128) 
 INFO: Creating files in directory V1_cxc_epvewmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c~ c > e+ ve w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P1_cxc_tapvtwmg (64 / 128) 
 INFO: Creating files in directory V1_cxc_tapvtwmg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Generating born Feynman diagrams for Process: c~ c > ta+ vt w- g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @1 
 INFO: Writing files in P2_uux_emvexwp (65 / 128) 
 INFO: Creating files in directory V2_uux_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: u u~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_uux_tamvtxwp (66 / 128) 
 INFO: Creating files in directory V2_uux_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: u u~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_ddx_emvexwp (67 / 128) 
 INFO: Creating files in directory V2_ddx_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: d d~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_ddx_tamvtxwp (68 / 128) 
 INFO: Creating files in directory V2_ddx_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: d d~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_ssx_emvexwp (69 / 128) 
 INFO: Creating files in directory V2_ssx_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: s s~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_ssx_tamvtxwp (70 / 128) 
 INFO: Creating files in directory V2_ssx_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: s s~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_uxu_emvexwp (71 / 128) 
 INFO: Creating files in directory V2_uxu_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: u~ u > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_uxu_tamvtxwp (72 / 128) 
 INFO: Creating files in directory V2_uxu_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: u~ u > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_dxd_emvexwp (73 / 128) 
 INFO: Creating files in directory V2_dxd_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: d~ d > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_dxd_tamvtxwp (74 / 128) 
 INFO: Creating files in directory V2_dxd_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: d~ d > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_sxs_emvexwp (75 / 128) 
 INFO: Creating files in directory V2_sxs_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: s~ s > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_sxs_tamvtxwp (76 / 128) 
 INFO: Creating files in directory V2_sxs_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: s~ s > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_ccx_emvexwp (77 / 128) 
 INFO: Creating files in directory V2_ccx_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: c c~ > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_ccx_tamvtxwp (78 / 128) 
 INFO: Creating files in directory V2_ccx_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: c c~ > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_cxc_emvexwp (79 / 128) 
 INFO: Creating files in directory V2_cxc_emvexwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: c~ c > e- ve~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P2_cxc_tamvtxwp (80 / 128) 
 INFO: Creating files in directory V2_cxc_tamvtxwp 
+ALOHA: aloha creates FFV1 set of routines with options: L3
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Generating born Feynman diagrams for Process: c~ c > ta- vt~ w+ NP<=2 QED<=3 [ all = QCD ] $$ t t~ h @2 
 INFO: Writing files in P3_gu_emvexwpu (81 / 128) 
 INFO: Creating files in directory V3_gu_emvexwpu 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g u > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gu_tamvtxwpu (82 / 128) 
 INFO: Creating files in directory V3_gu_tamvtxwpu 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g u > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gd_emvexwpd (83 / 128) 
 INFO: Creating files in directory V3_gd_emvexwpd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g d > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gd_tamvtxwpd (84 / 128) 
 INFO: Creating files in directory V3_gd_tamvtxwpd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g d > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gs_emvexwps (85 / 128) 
 INFO: Creating files in directory V3_gs_emvexwps 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g s > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gs_tamvtxwps (86 / 128) 
 INFO: Creating files in directory V3_gs_tamvtxwps 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g s > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gux_emvexwpux (87 / 128) 
 INFO: Creating files in directory V3_gux_emvexwpux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u~ > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g u~ > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gux_tamvtxwpux (88 / 128) 
 INFO: Creating files in directory V3_gux_tamvtxwpux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g u~ > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g u~ > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gdx_emvexwpdx (89 / 128) 
 INFO: Creating files in directory V3_gdx_emvexwpdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d~ > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g d~ > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gdx_tamvtxwpdx (90 / 128) 
 INFO: Creating files in directory V3_gdx_tamvtxwpdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g d~ > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g d~ > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gsx_emvexwpsx (91 / 128) 
 INFO: Creating files in directory V3_gsx_emvexwpsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s~ > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g s~ > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gsx_tamvtxwpsx (92 / 128) 
 INFO: Creating files in directory V3_gsx_tamvtxwpsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g s~ > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g s~ > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gc_emvexwpc (93 / 128) 
 INFO: Creating files in directory V3_gc_emvexwpc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g c > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gc_tamvtxwpc (94 / 128) 
 INFO: Creating files in directory V3_gc_tamvtxwpc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g c > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gcx_emvexwpcx (95 / 128) 
 INFO: Creating files in directory V3_gcx_emvexwpcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c~ > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g c~ > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_gcx_tamvtxwpcx (96 / 128) 
 INFO: Creating files in directory V3_gcx_tamvtxwpcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: g c~ > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: g c~ > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ug_emvexwpu (97 / 128) 
 INFO: Creating files in directory V3_ug_emvexwpu 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u g > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u g > e- ve~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ug_tamvtxwpu (98 / 128) 
 INFO: Creating files in directory V3_ug_tamvtxwpu 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u g > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u g > ta- vt~ w+ u NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_uux_emvexwpg (99 / 128) 
 INFO: Creating files in directory V3_uux_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u u~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u u~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_uux_tamvtxwpg (100 / 128) 
 INFO: Creating files in directory V3_uux_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u u~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u u~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_dg_emvexwpd (101 / 128) 
 INFO: Creating files in directory V3_dg_emvexwpd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d g > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d g > e- ve~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_dg_tamvtxwpd (102 / 128) 
 INFO: Creating files in directory V3_dg_tamvtxwpd 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d g > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d g > ta- vt~ w+ d NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ddx_emvexwpg (103 / 128) 
 INFO: Creating files in directory V3_ddx_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d d~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ddx_tamvtxwpg (104 / 128) 
 INFO: Creating files in directory V3_ddx_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d d~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d d~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_sg_emvexwps (105 / 128) 
 INFO: Creating files in directory V3_sg_emvexwps 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s g > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s g > e- ve~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_sg_tamvtxwps (106 / 128) 
 INFO: Creating files in directory V3_sg_tamvtxwps 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s g > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s g > ta- vt~ w+ s NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ssx_emvexwpg (107 / 128) 
 INFO: Creating files in directory V3_ssx_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s s~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ssx_tamvtxwpg (108 / 128) 
 INFO: Creating files in directory V3_ssx_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s s~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s s~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_uxg_emvexwpux (109 / 128) 
 INFO: Creating files in directory V3_uxg_emvexwpux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ g > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u~ g > e- ve~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_uxg_tamvtxwpux (110 / 128) 
 INFO: Creating files in directory V3_uxg_tamvtxwpux 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ g > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u~ g > ta- vt~ w+ u~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_uxu_emvexwpg (111 / 128) 
 INFO: Creating files in directory V3_uxu_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u~ u > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_uxu_tamvtxwpg (112 / 128) 
 INFO: Creating files in directory V3_uxu_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: u~ u > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: u~ u > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_dxg_emvexwpdx (113 / 128) 
 INFO: Creating files in directory V3_dxg_emvexwpdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ g > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d~ g > e- ve~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_dxg_tamvtxwpdx (114 / 128) 
 INFO: Creating files in directory V3_dxg_tamvtxwpdx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ g > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d~ g > ta- vt~ w+ d~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_dxd_emvexwpg (115 / 128) 
 INFO: Creating files in directory V3_dxd_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d~ d > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_dxd_tamvtxwpg (116 / 128) 
 INFO: Creating files in directory V3_dxd_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: d~ d > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: d~ d > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_sxg_emvexwpsx (117 / 128) 
 INFO: Creating files in directory V3_sxg_emvexwpsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ g > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s~ g > e- ve~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_sxg_tamvtxwpsx (118 / 128) 
 INFO: Creating files in directory V3_sxg_tamvtxwpsx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ g > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s~ g > ta- vt~ w+ s~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_sxs_emvexwpg (119 / 128) 
 INFO: Creating files in directory V3_sxs_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s~ s > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_sxs_tamvtxwpg (120 / 128) 
 INFO: Creating files in directory V3_sxs_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: s~ s > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: s~ s > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_cg_emvexwpc (121 / 128) 
 INFO: Creating files in directory V3_cg_emvexwpc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c g > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c g > e- ve~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_cg_tamvtxwpc (122 / 128) 
 INFO: Creating files in directory V3_cg_tamvtxwpc 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c g > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c g > ta- vt~ w+ c NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ccx_emvexwpg (123 / 128) 
 INFO: Creating files in directory V3_ccx_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c c~ > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_ccx_tamvtxwpg (124 / 128) 
 INFO: Creating files in directory V3_ccx_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c c~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c c~ > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_cxg_emvexwpcx (125 / 128) 
 INFO: Creating files in directory V3_cxg_emvexwpcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ g > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c~ g > e- ve~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_cxg_tamvtxwpcx (126 / 128) 
 INFO: Creating files in directory V3_cxg_tamvtxwpcx 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ g > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c~ g > ta- vt~ w+ c~ NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_cxc_emvexwpg (127 / 128) 
 INFO: Creating files in directory V3_cxc_emvexwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c~ c > e- ve~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Writing files in P3_cxc_tamvtxwpg (128 / 128) 
 INFO: Creating files in directory V3_cxc_tamvtxwpg 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
 INFO: Computing diagram color coefficients 
 INFO: Drawing loop Feynman diagrams for Process: c~ c > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
 INFO: Generating born Feynman diagrams for Process: c~ c > ta- vt~ w+ g NP<=2 QCD<=1 QED<=3 [ all = QCD ] $$ t t~ h @3 
@@ -1925,8 +2034,4 @@ l+ = e+ mu+
 p = g u d s u~ d~ s~ c c~
 vl~ = ve~ vm~ vt~
 quit
- 
-
- 
-
 job finished step CODEGEN, exiting now.
