@@ -1,9 +1,5 @@
-#import model loop_sm-ckm_no_b_mass
-#switch to diagonal ckm matrix if needed for speed
+import model EWdim6NLO
 
-import model EWdim6NLO-no_cmass_cpodd
-
-# 4f:
 define j = g u c d s u~ c~ d~ s~
 define p = g u c d s u~ c~ d~ s~
 
@@ -18,6 +14,5 @@ add process p p > ell+ vl w- j $$ t t~ H QED=3 [QCD] @1
 add process p p > ell- vl~ w+ $$ t t~ H QED=3 [QCD] @2
 add process p p > ell- vl~ w+ j $$ t t~ H QED=3 [QCD] @3
 
-#output WWTolnujj_01j_aTGC_semilep_Wpt-180toInf_WVmass-600to800_4f_NLO_FXFX -nojpeg
 
 output aTGCstudy_cpodd_ww_wvmass600to800 -nojpeg
