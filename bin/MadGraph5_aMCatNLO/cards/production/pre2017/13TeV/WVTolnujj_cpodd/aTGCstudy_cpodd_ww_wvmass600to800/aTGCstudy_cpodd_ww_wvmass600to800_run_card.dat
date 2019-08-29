@@ -160,3 +160,9 @@
 #***********************************************************************
  0 = iappl ! aMCfast switch (0=OFF, 1=prepare grids, 2=fill grids)
 #***********************************************************************
+ {} = pt_min_pdg ! Min pT for a massive particle
+ {} = pt_max_pdg ! Max pT for a massive particle
+ {} = mxx_min_pdg ! inv. mass for any pair of (anti)part
+
+
+
